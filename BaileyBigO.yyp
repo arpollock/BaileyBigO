@@ -63,6 +63,30 @@
             }
         },
         {
+            "Key": "44cb3046-e850-4ea3-b4b3-1b69352cd3e1",
+            "Value": {
+                "id": "a2ac1cdc-2eaf-4f54-b9e5-ca235638dd49",
+                "resourcePath": "objects\\obj_timeComplexity\\obj_timeComplexity.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4bea8c24-882c-41db-a745-7e10af7a8443",
+            "Value": {
+                "id": "57af3be6-51df-4001-b8a9-2f2d430534ef",
+                "resourcePath": "rooms\\room_1_puzzle\\room_1_puzzle.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "60c2d68d-099e-444b-8140-0c247cdbd163",
+            "Value": {
+                "id": "913b4b9b-f084-4e99-93fa-16bdecde1423",
+                "resourcePath": "objects\\obj_nelly\\obj_nelly.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80e2bfe8-0f9c-423f-8690-d14f67e476be",
             "Value": {
                 "id": "06a644fe-ca52-4ac8-aa86-5942b068512c",
@@ -175,10 +199,18 @@
             }
         },
         {
+            "Key": "ebbe2530-9852-4179-aa97-8d1cb0a45410",
+            "Value": {
+                "id": "04edde0a-f796-40f2-859a-97f9864633af",
+                "resourcePath": "objects\\obj_binaryBird\\obj_binaryBird.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ef7b3541-fadb-493c-9cd3-99add188b85e",
             "Value": {
                 "id": "72e9d122-6f28-457c-8a8e-ee0e605b478c",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\room_1_platform\\room_1_platform.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -188,6 +220,14 @@
                 "id": "58030660-7e3b-4cd1-98e3-09ab087bd15e",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fd40bffa-a532-41fb-9316-ada593d64a14",
+            "Value": {
+                "id": "ce3336f0-ddae-4606-bb11-f1273b96b336",
+                "resourcePath": "objects\\obj_bailey\\obj_bailey.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
