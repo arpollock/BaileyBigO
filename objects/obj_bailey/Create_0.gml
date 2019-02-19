@@ -1,2 +1,6 @@
 /// @description Insert description here
-// You can write your code in this editor
+leftKey = "A";
+rightKey = "D";
+jumpKey = "W";
+crouchKey = "S";
+// TODO: fix pickUpKey = "space";
