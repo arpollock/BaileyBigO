@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "60308eb3-9d11-4195-a654-12ffee7b96ad",
+            "Value": {
+                "id": "5c6388d5-b6b6-4171-855e-c1bfdecb85d7",
+                "resourcePath": "sprites\\spr_bailey\\spr_bailey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6098eeb5-d6a1-4be3-ac51-919c324bde49",
             "Value": {
                 "id": "5d6144c4-a7bf-4367-954b-7241cbbdd9d9",
@@ -275,6 +283,14 @@
             "Value": {
                 "id": "fd1306cb-5f1f-4a6a-8e57-adfc9916672f",
                 "resourcePath": "sprites\/spr_stoneCaveRockLarge\/spr_stoneCaveRockLarge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7852767a-e87f-4113-9f51-c1dac554119d",
+            "Value": {
+                "id": "922ebc5a-4250-433c-9147-c110d1ea278c",
+                "resourcePath": "sprites\\spr_baileyWalk\\spr_baileyWalk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -431,6 +447,14 @@
             }
         },
         {
+            "Key": "a58a0b02-8d06-4eee-b75b-206bf0b6adc0",
+            "Value": {
+                "id": "151fe950-545a-4c14-a412-d5899a54af68",
+                "resourcePath": "sprites\\spr_baileyJump\\spr_baileyJump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a8ba07c4-483c-48f8-9301-e68e152e25bb",
             "Value": {
                 "id": "e3ae1f3c-ed83-4f82-86dd-114be863145f",
@@ -452,6 +476,14 @@
                 "id": "3b7863d1-23ae-44e5-a4ee-4dda2faa853c",
                 "resourcePath": "views\/aa11ff15-fe28-4a27-8728-442949ba9ac0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "af15810c-b6c4-40f0-a02b-7e5b56a8af5c",
+            "Value": {
+                "id": "9727009a-18ac-4b5c-a3ed-0eaa73ee8667",
+                "resourcePath": "objects\\obj_platform\\obj_platform.yy",
+                "resourceType": "GMObject"
             }
         },
         {
