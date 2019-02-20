@@ -5,7 +5,7 @@
 
 // Horizontal Movement
 horizontalSpeed = walkSpeed;
-if( keyboard_check( ord(leftKey)) ){ // move left
+if( keyboard_check(leftKey) ){ // move left
 	
 	sprite_index = spr_baileyWalk;
 	image_xscale = -1;
@@ -18,7 +18,7 @@ if( keyboard_check( ord(leftKey)) ){ // move left
 	}
 	x = x - horizontalSpeed;
 	
-}else if(keyboard_check( ord(rightKey))){ // move right
+}else if( keyboard_check(rightKey) ){ // move right
 	
 	sprite_index = spr_baileyWalk;
 	image_xscale = 1;
@@ -37,13 +37,13 @@ if( keyboard_check( ord(leftKey)) ){ // move left
 
 // Jumping
 // TODO: only jump from ground or limit # of jumps
-if( keyboard_check( ord(jumpKey)) ){
-	verticalSpeed = -7;
+if( keyboard_check(jumpKey) ){
+	verticalSpeed = jumpVal;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
 	verticalSpeed = 0;
 }
 
-if(keyboard_check( ord(crouchKey))){ // crouch
+if( keyboard_check(crouchKey) ){ // crouch
 	
 }
 
@@ -58,6 +58,6 @@ if( place_meeting(x, y+verticalSpeed, obj_platform) ){ // is there a collision?
 }
 y = y + verticalSpeed;
 
-if(keyboard_check(pickUpKey)){
+if( keyboard_check(pickUpKey) ){
 	
 }
