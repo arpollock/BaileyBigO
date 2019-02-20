@@ -36,7 +36,8 @@ if( keyboard_check( ord(leftKey)) ){ // move left
 }
 
 // Jumping
-if( keyboard_check( ord(jumpKey)) && place_meeting(x, y, obj_platform) ){ // only jump from ground
+// TODO: only jump from ground or limit # of jumps
+if( keyboard_check( ord(jumpKey)) ){
 	verticalSpeed = -7;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
 	verticalSpeed = 0;

@@ -6,34 +6,34 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 89,
-    "bbox_left": 4,
-    "bbox_right": 58,
-    "bbox_top": 3,
+    "bbox_bottom": 92,
+    "bbox_left": 2,
+    "bbox_right": 57,
+    "bbox_top": 7,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "a592a446-7163-456e-9531-27e4959c90a6",
+            "id": "2d32a180-dd82-4606-8568-85969ac45d9e",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "60308eb3-9d11-4195-a654-12ffee7b96ad",
             "compositeImage": {
-                "id": "b47af412-49cc-453f-87cf-f83a8877fcc4",
+                "id": "79714231-4a2a-4f3c-865b-81abfd8a1768",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "a592a446-7163-456e-9531-27e4959c90a6",
+                "FrameId": "2d32a180-dd82-4606-8568-85969ac45d9e",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "5a8a7969-7065-4081-a6cf-e1087f6dfa8c",
+                    "id": "af605e8c-5967-46f9-9c26-b040e897c2b8",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "a592a446-7163-456e-9531-27e4959c90a6",
-                    "LayerId": "886e1e85-618c-4366-b0e6-a167e7d6f944"
+                    "FrameId": "2d32a180-dd82-4606-8568-85969ac45d9e",
+                    "LayerId": "ccf042c9-c312-42b5-852f-be678abf14b4"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 93,
     "layers": [
         {
-            "id": "886e1e85-618c-4366-b0e6-a167e7d6f944",
+            "id": "ccf042c9-c312-42b5-852f-be678abf14b4",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "60308eb3-9d11-4195-a654-12ffee7b96ad",
@@ -56,7 +56,7 @@
     ],
     "origin": 4,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 30,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
