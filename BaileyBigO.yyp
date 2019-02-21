@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1182c9db-0d66-42c1-b5d1-415ea27ebf07",
+            "Value": {
+                "id": "ebce80a0-ecb4-42dd-9ecb-492170543e30",
+                "resourcePath": "sprites\\spr_gameover\\spr_gameover.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "168a16cf-75e4-4869-bb74-49bb60ab6b69",
             "Value": {
                 "id": "7da1c97c-564e-4f4a-96db-25ae22f3aa32",
@@ -156,6 +164,22 @@
                 "id": "4dcaec0d-4bee-4629-a40b-dbd55cea45b8",
                 "resourcePath": "sprites\/spr_metalMid\/spr_metalMid.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2f47083a-7ffd-40c8-b4a4-17ffe1f101de",
+            "Value": {
+                "id": "83c66b6a-b03c-4b63-b3b2-b5f1573be54c",
+                "resourcePath": "rooms\\room_gameover\\room_gameover.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "304469c0-affa-4d7d-be1b-9ada36aecc31",
+            "Value": {
+                "id": "f6d4dbd8-a974-4ead-a3b6-d4556aba7ccb",
+                "resourcePath": "objects\\obj_gameover\\obj_gameover.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -260,6 +284,14 @@
                 "id": "d07f1baa-912a-4688-a4b3-829927580e88",
                 "resourcePath": "sprites\/spr_metalCenter\/spr_metalCenter.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48d1b3cf-29eb-48f8-9393-6cef19eda01a",
+            "Value": {
+                "id": "05faebbc-5327-4cd1-8e5b-a835f107e1d4",
+                "resourcePath": "objects\\obj_play_again\\obj_play_again.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -468,6 +500,14 @@
                 "id": "6ddcf4a9-ce32-4f5c-993d-279c88d8cdd5",
                 "resourcePath": "tilesets\/tileset_platform\/tileset_platform.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "8b8200c5-f712-4541-b121-eabb33095fd0",
+            "Value": {
+                "id": "93057be5-fb48-4aee-baee-a97753cc4945",
+                "resourcePath": "sprites\\spr_play_again\\spr_play_again.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
