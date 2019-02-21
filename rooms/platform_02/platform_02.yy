@@ -1,6 +1,6 @@
 
 {
-    "name": "room_1_platform",
+    "name": "platform_02",
     "id": "ef7b3541-fadb-493c-9cd3-99add188b85e",
     "creationCodeFile": "",
     "inheritCode": false,
