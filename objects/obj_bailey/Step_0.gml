@@ -16,6 +16,9 @@ if( keyboard_check(leftKey) ){ // move left
 		}
 		horizontalSpeed = 0;
 	}
+	if( place_meeting(x-horizontalSpeed, y, obj_nelly) ){ 
+		horizontalSpeed = 0;
+	}
 	x = x - horizontalSpeed;
 	
 }else if( keyboard_check(rightKey) ){ // move right
@@ -27,6 +30,9 @@ if( keyboard_check(leftKey) ){ // move left
 		while( !place_meeting(x+1, y, obj_platform) ){
 			x=x+1;
 		}
+		horizontalSpeed = 0;
+	}
+	if( place_meeting(x+horizontalSpeed, y, obj_nelly) ){ 
 		horizontalSpeed = 0;
 	}
 	x = x + horizontalSpeed;
@@ -59,6 +65,12 @@ verticalSpeed = verticalSpeed + grav
 if( place_meeting(x, y+verticalSpeed, obj_platform) ){ // is there a collision?
 	// yes, don't fall completely, fall to floor 
 	while( !place_meeting(x, y+sign(verticalSpeed), obj_platform) ){
+		y=y+sign(verticalSpeed);
+	}
+	verticalSpeed = 0;
+}
+if( place_meeting(x, y+verticalSpeed, obj_nelly) ){ 
+	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly) ){
 		y=y+sign(verticalSpeed);
 	}
 	verticalSpeed = 0;
