@@ -37,13 +37,20 @@ if( keyboard_check(leftKey) ){ // move left
 }
 
 // Jumping
-// TODO: only jump from ground or limit # of jumps
-if( keyboard_check(jumpKey) ){
+// only jump from ground: place_meeting(x, y+1, obj_platform)
+// double jump logic: on the ground? -> set jump count to max
+// if jump, jump and jump -= 1
+if( place_meeting(x, y+1, obj_platform) ){ // on floor, reset jumps
+	jumps = MAX_JUMPS;
+}
+if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
 	verticalSpeed = jumpVal;
+	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
 	verticalSpeed = 0;
 }
 
+// TODO: implement crouch
 if( keyboard_check(crouchKey) ){ // crouch
 	
 }

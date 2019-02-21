@@ -6,6 +6,9 @@ crouchKey = vk_down;
 pickUpKey = vk_rcontrol;
 
 jumpVal = -5;
+jumps = 0;
+MAX_JUMPS = 2; // 1 from ground, 1 in air
+
 walkSpeed = 5;
 horizontalSpeed = 0;
 verticalSpeed = 0;
