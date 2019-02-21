@@ -1,6 +1,6 @@
 
 {
-    "name": "room_1_puzzle",
+    "name": "puzzle_03",
     "id": "4bea8c24-882c-41db-a745-7e10af7a8443",
     "creationCodeFile": "",
     "inheritCode": false,
