@@ -45,7 +45,7 @@ if( keyboard_check(leftKey) ){ // move left
 // only jump from ground: place_meeting(x, y+1, obj_platform)
 // double jump logic: on the ground? -> set jump count to max
 // if jump, jump and jump -= 1
-if( place_meeting(x, y+1, obj_platform) ){ // on floor, reset jumps
+if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
@@ -76,6 +76,10 @@ if( place_meeting(x, y+verticalSpeed, obj_nelly) ){
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
+
+if(!place_meeting(x, y + 1, obj_platform)){
+	sprite_index = spr_baileyJump;
+}
 
 if( keyboard_check(pickUpKey) ){
 	
