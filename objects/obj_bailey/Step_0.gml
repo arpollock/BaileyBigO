@@ -77,7 +77,7 @@ if( place_meeting(x, y+verticalSpeed, obj_nelly) ){
 }
 y = y + verticalSpeed;
 
-if(!place_meeting(x, y + 1, obj_platform)){
+if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly))){
 	sprite_index = spr_baileyJump;
 }
 
