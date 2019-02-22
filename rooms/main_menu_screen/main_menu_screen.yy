@@ -1,6 +1,6 @@
 
 {
-    "name": "welcome_screen",
+    "name": "main_menu_screen",
     "id": "3bc22a9e-1599-4873-a460-365f293f1ed0",
     "creationCodeFile": "",
     "inheritCode": false,

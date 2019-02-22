@@ -5,7 +5,7 @@ jumpKey = vk_up;
 crouchKey = vk_down;
 pickUpKey = vk_rcontrol;
 
-jumpVal = -5;
+jumpVal = -7;
 jumps = 0;
 MAX_JUMPS = 2; // 1 from ground, 1 in air
 

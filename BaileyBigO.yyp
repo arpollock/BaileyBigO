@@ -528,7 +528,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/welcome_screen\/welcome_screen.yy",
+                "resourcePath": "rooms\/main_menu_screen\/main_menu_screen.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -625,6 +625,25 @@
                 ],
                 "resourcePath": "views\/3f8ec81b-f426-43c7-aa47-96a6a076e2d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3ffd8a39-4815-467a-83a4-3d357319af47",
+            "Value": {
+                "id": "15b01c8c-2a9c-42c1-8d65-9dd02ac06e0b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/font_bender_subtitle\/font_bender_subtitle.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1005,6 +1024,25 @@
                 ],
                 "resourcePath": "sprites\/spr_binaryBird1\/spr_binaryBird1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75a6f783-dd58-41b5-9f47-c10a1a270002",
+            "Value": {
+                "id": "dda93beb-0503-4af5-87ea-2554a5f5b716",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room_splash_screen\/room_splash_screen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1806,6 +1844,25 @@
             }
         },
         {
+            "Key": "bfea0770-44a0-4e3e-8697-bb05fe9351db",
+            "Value": {
+                "id": "f2fe4ddf-6d63-47bf-a041-640669e1568e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_splash\/obj_splash.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bffcfe4d-f2fe-460e-ab7a-de583d593fc1",
             "Value": {
                 "id": "34597583-759f-4da2-8b2d-c28281452fd9",
@@ -2297,6 +2354,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4233949-78e6-458a-b323-9a15044f7a93",
+            "Value": {
+                "id": "cb86d836-5506-49ad-9fa8-2639070eabcf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/font_bender_title\/font_bender_title.yy",
+                "resourceType": "GMFont"
             }
         },
         {
