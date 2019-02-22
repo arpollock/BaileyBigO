@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 92,
+    "bbox_bottom": 93,
     "bbox_left": 0,
     "bbox_right": 54,
     "bbox_top": 0,
@@ -16,34 +16,34 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "fdd9f82a-1e3b-4b8a-884a-87ded9c44b99",
+            "id": "80e2dfb9-f072-4f72-9001-48327761f35d",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "168a16cf-75e4-4869-bb74-49bb60ab6b69",
             "compositeImage": {
-                "id": "cb09e065-82b3-4f4a-8ba9-c9c33f4f4b53",
+                "id": "d48bbeba-f0c1-45b8-b15e-50d4130c5cd3",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "fdd9f82a-1e3b-4b8a-884a-87ded9c44b99",
+                "FrameId": "80e2dfb9-f072-4f72-9001-48327761f35d",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "78421d4d-1418-44a1-9be1-40d560f5f86c",
+                    "id": "327b7107-d8d1-4877-8463-472fbd9b9359",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "fdd9f82a-1e3b-4b8a-884a-87ded9c44b99",
-                    "LayerId": "3cc29f76-fef2-4ee2-9048-52141f69a733"
+                    "FrameId": "80e2dfb9-f072-4f72-9001-48327761f35d",
+                    "LayerId": "9b23518c-b013-4fa1-90ae-e612db62ece0"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 93,
+    "height": 94,
     "layers": [
         {
-            "id": "3cc29f76-fef2-4ee2-9048-52141f69a733",
+            "id": "9b23518c-b013-4fa1-90ae-e612db62ece0",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "168a16cf-75e4-4869-bb74-49bb60ab6b69",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 30,
     "playbackSpeedType": 0,
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 55,
     "xorig": 27,
-    "yorig": 46
+    "yorig": 93
 }
