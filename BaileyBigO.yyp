@@ -338,7 +338,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_redLaser\/spr_redLaser.yy",
+                "resourcePath": "sprites\/spr_laser1\/spr_laser1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -609,6 +609,25 @@
             }
         },
         {
+            "Key": "3e2472f6-3c28-4686-bc15-a73cc4e6845e",
+            "Value": {
+                "id": "cdd00558-538f-4f29-b560-2adf03695adf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_laser3\/spr_laser3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f8ec81b-f426-43c7-aa47-96a6a076e2d8",
             "Value": {
                 "id": "3fcf1200-76a3-47e1-a839-5dd9635d7acc",
@@ -661,7 +680,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_yellowLaserSwitch\/spr_yellowLaserSwitch.yy",
+                "resourcePath": "sprites\/spr_laserSwitch2\/spr_laserSwitch2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -889,7 +908,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_redLaserSwitch\/spr_redLaserSwitch.yy",
+                "resourcePath": "sprites\/spr_laserSwitch3\/spr_laserSwitch3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1345,7 +1364,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_yellowLaser\/spr_yellowLaser.yy",
+                "resourcePath": "sprites\/spr_laser2\/spr_laser2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1840,6 +1859,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_dirtCaveUR\/spr_dirtCaveUR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bf173b1c-4e6e-45e4-9287-027d78cf8110",
+            "Value": {
+                "id": "ef574515-0f5d-4aaf-a028-51a1f1cd41ac",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_laserSwitch1\/spr_laserSwitch1.yy",
                 "resourceType": "GMSprite"
             }
         },
