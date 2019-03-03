@@ -14,3 +14,5 @@ horizontalSpeed = 0;
 verticalSpeed = 0;
 grav = 0.3;
 
+hp = 5;
+
