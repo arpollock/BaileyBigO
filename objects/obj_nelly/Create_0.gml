@@ -15,4 +15,5 @@ verticalSpeed = 0;
 grav = 0.3;
 
 hp = 5;
+hp_cooldown = 0;
 
