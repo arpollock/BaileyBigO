@@ -89,3 +89,4 @@ if( keyboard_check(pickUpKey) ){
 if (keyboard_check(ord("Q"))){
 	room_goto(room_quit);
 }
+
