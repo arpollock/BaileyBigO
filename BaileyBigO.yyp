@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b",
+            "Value": {
+                "id": "50ba8783-5d38-493a-8a80-578537d24961",
+                "resourcePath": "objects\\obj_crate\\obj_crate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf173b1c-4e6e-45e4-9287-027d78cf8110",
             "Value": {
                 "id": "ef574515-0f5d-4aaf-a028-51a1f1cd41ac",
@@ -931,6 +939,14 @@
             "Value": {
                 "id": "d91aedcf-09c7-4802-b7ad-6641fe07ce42",
                 "resourcePath": "sprites\/spr_laserDown\/spr_laserDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d09443fa-abdf-4703-a878-6e0475e87cf7",
+            "Value": {
+                "id": "b08652d2-7390-499d-8b8e-27a0932fe31a",
+                "resourcePath": "sprites\\spr_crateOn\\spr_crateOn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1084,6 +1100,14 @@
                 "id": "cb86d836-5506-49ad-9fa8-2639070eabcf",
                 "resourcePath": "fonts\/font_bender_title\/font_bender_title.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "f9d14b46-ea15-4abe-924d-42df12e116ce",
+            "Value": {
+                "id": "075fd22d-a5c3-467a-9a65-050d3db09f82",
+                "resourcePath": "sprites\\spr_crateOff\\spr_crateOff.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

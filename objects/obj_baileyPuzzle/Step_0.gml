@@ -43,8 +43,17 @@ if( keyboard_check(leftKey) ){ // move left
 	sprite_index = spr_bailey;
 }
 
-if( keyboard_check(pickUpKey) ){
-	
+if( keyboard_check_pressed(pickUpKey) ){
+	if(place_meeting(x,y,obj_crate)){
+		inst = instance_position(x,y,obj_crate);
+		with(inst){
+			if( sprite_index == spr_crateOff ){
+				sprite_index = spr_crateOn; 
+			}else{
+				sprite_index = spr_crateOff 
+			}
+		}
+	}
 }
 
 //check if q is pressed to quit the game
