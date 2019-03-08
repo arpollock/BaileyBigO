@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //check if bailey collided with a turtle
-if (position_meeting(x,y,obj_bailey)){
+if (place_meeting(x,y,obj_bailey)){
 	//whack bailey
 	if (obj_bailey.hp_cooldown == 0){
 		obj_bailey.hp--;	
@@ -12,49 +12,51 @@ if (position_meeting(x,y,obj_bailey)){
 
 else if (position_meeting(x,y-obj_turtle.sprite_height,obj_bailey)){
 	//check that bailey jumped on the right turtle
-	if (sprite_index == spr_turtle2 ){
-		//whack bailey
-		if (obj_bailey.hp_cooldown == 0){
-			obj_bailey.hp--;	
-			obj_bailey.hp_cooldown = 100;
+	//if (instance_exists(spr_turtle2){
+		if (sprite_index == spr_turtle2 ){
+			//whack bailey
+			if (obj_bailey.hp_cooldown == 0){
+				obj_bailey.hp--;	
+				obj_bailey.hp_cooldown = 100;
+			}
 		}
-	}
-	//if its the right turtle, kill it
-	else{
-		instance_destroy();
-	}
+		//if its the right turtle, kill it
+		else{
+			instance_destroy();
+		}
+	//}
 }
 else{
 	//do nothing
 }
-
-// Check if nelly collided with turtle
-if (position_meeting(x,y,obj_nelly)){
-	//whack nelly
-	if (obj_nelly.hp_cooldown == 0){
-		obj_nelly.hp--;	
-		obj_nelly.hp_cooldown = 100;
-	}
-}
-
-else if (position_meeting(x,y-obj_turtle.sprite_height,obj_nelly)){
-	//check that Nelly jumped on the right turtle
-	if (sprite_index == spr_turtle1){
+if (instance_exists(obj_turtle)){
+	// Check if nelly collided with turtle
+	if (position_meeting(x,y,obj_nelly)){
 		//whack nelly
 		if (obj_nelly.hp_cooldown == 0){
 			obj_nelly.hp--;	
 			obj_nelly.hp_cooldown = 100;
 		}
 	}
-	//if its the right turtle, kill it
+
+	else if (position_meeting(x,y-obj_turtle.sprite_height,obj_nelly)){
+		//check that Nelly jumped on the right turtle
+		if (sprite_index == spr_turtle1){
+			//whack nelly
+			if (obj_nelly.hp_cooldown == 0){
+				obj_nelly.hp--;	
+				obj_nelly.hp_cooldown = 100;
+			}
+		}
+		//if its the right turtle, kill it
+		else{
+			instance_destroy();
+		}
+	}
 	else{
-		instance_destroy();
+		//do nothing
 	}
 }
-else{
-	//do nothing
-}
-
 if(pos <= stride){
 	x += spd;
 	image_xscale = 1;
