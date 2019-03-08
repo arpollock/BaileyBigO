@@ -2,7 +2,6 @@
 
 // var  = keyword for temporary, only one frame
 // might switch to right minus left check so doesn't move when both are pressed
-
 // Horizontal Movement
 horizontalSpeed = walkSpeed;
 if( keyboard_check(leftKey) ){ // move left

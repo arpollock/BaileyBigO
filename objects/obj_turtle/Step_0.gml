@@ -29,6 +29,12 @@ else if (position_meeting(x,y-obj_turtle.sprite_height,obj_bailey)){
 else{
 	//do nothing
 }
+//check if bailey died
+if (obj_bailey.hp==0){
+	room_restart();
+}
+
+//make sure a turtle exists 
 if (instance_exists(obj_turtle)){
 	// Check if nelly collided with turtle
 	if (place_meeting(x,y,obj_nelly)){
@@ -57,6 +63,12 @@ if (instance_exists(obj_turtle)){
 		//do nothing
 	}
 }
+//check if nelly died
+if (obj_nelly.hp==0){
+	room_restart();
+}
+
+
 if(pos <= stride){
 	x += spd;
 	image_xscale = 1;
