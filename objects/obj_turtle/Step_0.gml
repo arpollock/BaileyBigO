@@ -31,7 +31,7 @@ else{
 }
 if (instance_exists(obj_turtle)){
 	// Check if nelly collided with turtle
-	if (position_meeting(x,y,obj_nelly)){
+	if (place_meeting(x,y,obj_nelly)){
 		//whack nelly
 		if (obj_nelly.hp_cooldown == 0){
 			obj_nelly.hp--;	
