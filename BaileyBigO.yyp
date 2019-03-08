@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0040dd11-f5d6-4453-9cbd-ffe804c14229",
+            "Value": {
+                "id": "1a31a4ea-f846-4505-8673-46ff787d0e26",
+                "resourcePath": "objects\\obj_nellyPuzzle\\obj_nellyPuzzle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02b8427f-3e52-4edb-b1c4-5fa398c75a6d",
             "Value": {
                 "id": "aad2324c-8f72-41ab-8277-4f23475d7cae",
@@ -154,7 +162,7 @@
             "Key": "2b8602d4-d9ef-45ec-b9b8-5dba77ed3e6a",
             "Value": {
                 "id": "942ed35c-27eb-4633-9698-9ac9af27f1c1",
-                "resourcePath": "objects\\obj_turtle\\obj_turtle.yy",
+                "resourcePath": "objects\/obj_turtle\/obj_turtle.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -215,6 +223,14 @@
             }
         },
         {
+            "Key": "35855089-17fe-4f36-8375-e47122b19ed3",
+            "Value": {
+                "id": "385a2116-cb46-4360-ab6c-ba8abc7089d9",
+                "resourcePath": "sprites\\spr_puzzleGround\\spr_puzzleGround.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35bc0ed1-b053-4894-b114-fee6bf69af48",
             "Value": {
                 "id": "837e09c2-bc7a-4473-99e4-571bd5691913",
@@ -242,7 +258,7 @@
             "Key": "38e834bb-541b-43e8-8d4e-fa217bfe682c",
             "Value": {
                 "id": "24e9bf82-0d04-468e-b341-891706326157",
-                "resourcePath": "sprites\\spr_baileyHead\\spr_baileyHead.yy",
+                "resourcePath": "sprites\/spr_baileyLife\/spr_baileyLife.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -399,6 +415,14 @@
             }
         },
         {
+            "Key": "5304f0f6-cb7b-4acc-9a37-081b7d4b9d2a",
+            "Value": {
+                "id": "8ea10ee0-cbd3-44b3-960a-c193020b3f3e",
+                "resourcePath": "objects\\obj_baileyPuzzle\\obj_baileyPuzzle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "60308eb3-9d11-4195-a654-12ffee7b96ad",
             "Value": {
                 "id": "5c6388d5-b6b6-4171-855e-c1bfdecb85d7",
@@ -450,7 +474,7 @@
             "Key": "6c6f27aa-ab93-4d99-9463-c1c03a138353",
             "Value": {
                 "id": "9b1d6e25-5397-45af-a1b1-8a6fa8f82340",
-                "resourcePath": "sprites\\spr_nellyHead\\spr_nellyHead.yy",
+                "resourcePath": "sprites\/spr_nellyLife\/spr_nellyLife.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +612,14 @@
                 "id": "676efd1b-687a-48d1-9cf9-433a2c33b5de",
                 "resourcePath": "sprites\/spr_stoneCaveBL\/spr_stoneCaveBL.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89094c46-a422-454d-85d3-57c70776bfe5",
+            "Value": {
+                "id": "8694207a-ce1b-414a-b5b7-7b19a58d94e1",
+                "resourcePath": "objects\\obj_startPuz\\obj_startPuz.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -823,6 +855,14 @@
             }
         },
         {
+            "Key": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b",
+            "Value": {
+                "id": "50ba8783-5d38-493a-8a80-578537d24961",
+                "resourcePath": "objects\\obj_crate\\obj_crate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bf173b1c-4e6e-45e4-9287-027d78cf8110",
             "Value": {
                 "id": "ef574515-0f5d-4aaf-a028-51a1f1cd41ac",
@@ -899,6 +939,14 @@
             "Value": {
                 "id": "d91aedcf-09c7-4802-b7ad-6641fe07ce42",
                 "resourcePath": "sprites\/spr_laserDown\/spr_laserDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d09443fa-abdf-4703-a878-6e0475e87cf7",
+            "Value": {
+                "id": "b08652d2-7390-499d-8b8e-27a0932fe31a",
+                "resourcePath": "sprites\\spr_crateOn\\spr_crateOn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1052,6 +1100,14 @@
                 "id": "cb86d836-5506-49ad-9fa8-2639070eabcf",
                 "resourcePath": "fonts\/font_bender_title\/font_bender_title.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "f9d14b46-ea15-4abe-924d-42df12e116ce",
+            "Value": {
+                "id": "075fd22d-a5c3-467a-9a65-050d3db09f82",
+                "resourcePath": "sprites\\spr_crateOff\\spr_crateOff.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
