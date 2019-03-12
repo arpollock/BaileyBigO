@@ -1,28 +1,28 @@
 {
-    "id": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b",
+    "id": "d6d6726d-df11-4638-907d-d82060fef5a2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_crate",
+    "name": "obj_puzzlePiece",
     "eventList": [
         {
-            "id": "d3df4853-e0a2-4f5f-b032-5034c69d5dd0",
+            "id": "84d3e8a1-c605-4ab6-9524-89f7e29bf90e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d6d6726d-df11-4638-907d-d82060fef5a2"
+        },
+        {
+            "id": "b6dcab2c-07a3-484c-b08c-afade0e4a9d4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b"
-        },
-        {
-            "id": "047e96ca-1cf8-4c4a-9a65-577d979128d9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b"
+            "m_owner": "d6d6726d-df11-4638-907d-d82060fef5a2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f9d14b46-ea15-4abe-924d-42df12e116ce",
+    "spriteId": "0b60de19-8419-4a78-baa8-db8bbe7f25b8",
     "visible": true
 }

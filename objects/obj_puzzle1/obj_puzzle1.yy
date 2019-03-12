@@ -1,28 +1,38 @@
 {
-    "id": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b",
+    "id": "a263c5f6-ce41-4770-aa3d-10b6f80067b8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_crate",
+    "name": "obj_puzzle1",
     "eventList": [
         {
-            "id": "d3df4853-e0a2-4f5f-b032-5034c69d5dd0",
+            "id": "d49b1984-2a2f-49d4-b9c5-95906dbef340",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b"
+            "m_owner": "a263c5f6-ce41-4770-aa3d-10b6f80067b8"
         },
         {
-            "id": "047e96ca-1cf8-4c4a-9a65-577d979128d9",
+            "id": "12641b35-2e71-457c-a4b4-e412d8d66221",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "a263c5f6-ce41-4770-aa3d-10b6f80067b8"
+        },
+        {
+            "id": "ad594772-f4ed-43d3-af4c-051a3fac8102",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "bb2eb8d0-7a25-40cc-9bd9-85f0e3b8d07b"
+            "m_owner": "a263c5f6-ce41-4770-aa3d-10b6f80067b8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f9d14b46-ea15-4abe-924d-42df12e116ce",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
