@@ -61,10 +61,16 @@ if( keyboard_check(leftKey) ){ // move left
 if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
+if( place_meeting(x, y+1, obj_pipe) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
+	jumps = MAX_JUMPS;
+}
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
 	verticalSpeed = jumpVal;
 	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
+	verticalSpeed = 0;
+}
+else if( place_meeting(x, y, obj_pipe) ){ // on ground not jumping
 	verticalSpeed = 0;
 }
 
@@ -82,6 +88,13 @@ if( place_meeting(x, y+verticalSpeed, obj_platform) ){ // is there a collision?
 	}
 	verticalSpeed = 0;
 }
+if( place_meeting(x, y+verticalSpeed, obj_pipe) ){ // is there a collision?
+	// yes, don't fall completely, fall to floor 
+	while( !place_meeting(x, y+sign(verticalSpeed), obj_pipe) ){
+		y=y+sign(verticalSpeed);
+	}
+	verticalSpeed = 0;
+}
 if( place_meeting(x, y+verticalSpeed, obj_nelly) ){ 
 	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly) ){
 		y=y+sign(verticalSpeed);
@@ -94,12 +107,25 @@ if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly))
 	sprite_index = spr_baileyJump;
 }
 
-if( keyboard_check(pickUpKey) ){
-	
-}
+
 
 //check if q is pressed to quit the game
 if (keyboard_check(ord("Q"))){
 	room_goto(room_quit);
 }
-
+if( place_meeting(x+horizontalSpeed, y, obj_binaryBird) ){ // is there a collision
+	if (global.has_item = false){
+		pickup = obj_binaryBird.id;
+		//obj_binaryBird.carried = true;
+		global.has_item = true;
+	}		
+}
+if (pickup > 0) {
+	pickup.x = x; //here I refer to the id that's held in pickup
+	pickup.y = y - 8;
+}
+if( keyboard_check(dropKey) && pickup >0 ){
+	pickup.y = y + 16;
+	pickup = 0;
+	global.has_item =false;
+}

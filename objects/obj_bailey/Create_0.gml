@@ -3,7 +3,7 @@ leftKey = ord("A");
 rightKey = ord("D");
 jumpKey = ord("W");
 crouchKey = ord("S");
-pickUpKey = vk_space;
+dropKey = vk_space;
 
 jumpVal = -9;
 jumps = 0;
@@ -16,3 +16,6 @@ grav = 0.3;
 
 hp = 5;
 hp_cooldown = 0;
+
+pickup = 0;
+global.has_item = false;

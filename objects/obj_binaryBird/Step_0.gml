@@ -1,28 +1,53 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-
-
-if (fly){
-	if (x<x_start+400){
-		x = x+x_speed;
+//if (!carried){
+	if(pos <= stride){
+		x += spd;
+		image_xscale = 1;
 	}
-	else {
-		fly = 0;
-		p_side = -1;
+	else if(pos > stride and pos <= stride*2){
+		x -= spd;	
+		image_xscale = -1;
 	}
-}
-else {
-	if (x>x_start){
-		x = x-x_speed;
+	else{
+		pos = 0;
 	}
-	else {
-		fly = 1;
-		p_side = 1;
-	}
-}
+	pos+=spd;
 	
-p_ind += 0.25;
-if (p_ind > sprite_get_number(p_spr)-1){
-	p_ind = 0;
-}	
+	
+	if( place_meeting(x, y, obj_pipe) ){ // is there a collision
+		visible = false;
+		//instance_destroy();		
+		start_timer = true;
+	}
+	
+	if (start_timer){
+		timer++;
+	}
+	
+	if (room_speed * timer == 30){
+		visible = true;
+		timer = 0;
+		start_timer = false;
+	}
+//}
+/*
+if( place_meeting(x+horizontalSpeed, y, obj_pipe) ){ // is there a collision
+		// yes, don't move there, move as close as possible
+		while( !place_meeting(x+1, y, obj_pipe) ){
+			x=x+1;
+		}
+		horizontalSpeed = 0;
+	}
+if keyboard_check(vk_left){
+   timer += 1;
+}
+
+//once timer reaches 30 steps, move player 32 pixels to the left
+if timer = 30{
+   x = (x - 32);
+
+   //reset the timer so we can do it multiple times
+   timer = 0;
+}
+*/
