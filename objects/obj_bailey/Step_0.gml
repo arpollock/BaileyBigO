@@ -15,6 +15,13 @@ if( keyboard_check(leftKey) ){ // move left
 		}
 		horizontalSpeed = 0;
 	}
+	if( place_meeting(x-horizontalSpeed, y, obj_pipe) ){ // is there a collision
+		// yes: don't move there, move as close as possible
+		while( !place_meeting(x-1, y, obj_pipe) ){
+			x=x-1;
+		}
+		horizontalSpeed = 0;
+	}
 	if( place_meeting(x-horizontalSpeed, y, obj_nelly) ){ 
 		horizontalSpeed = 0;
 	}
@@ -27,6 +34,13 @@ if( keyboard_check(leftKey) ){ // move left
 	if( place_meeting(x+horizontalSpeed, y, obj_platform) ){ // is there a collision
 		// yes, don't move there, move as close as possible
 		while( !place_meeting(x+1, y, obj_platform) ){
+			x=x+1;
+		}
+		horizontalSpeed = 0;
+	}
+	if( place_meeting(x+horizontalSpeed, y, obj_pipe) ){ // is there a collision
+		// yes, don't move there, move as close as possible
+		while( !place_meeting(x+1, y, obj_pipe) ){
 			x=x+1;
 		}
 		horizontalSpeed = 0;
