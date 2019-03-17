@@ -15,17 +15,37 @@
 	pos+=spd;
 	
 	
-	if( place_meeting(x, y, obj_pipe) ){ // is there a collision
+	if( place_meeting(x, y, obj_yPipe_in) ){ // is there a collision
 		visible = false;
+		x = obj_yPipe_out.x;
+		y = obj_yPipe_out.y;
+		global.has_item = false;
+		global.pickup = 0;
 		//instance_destroy();		
 		start_timer = true;
+	}
+	if( place_meeting(x, y, obj_rPipe_in) ){ // is there a collision
+		visible = false;
+		x = obj_rPipe_out.x;
+		y = obj_rPipe_out.y+sprite_height;
+		global.has_item = false;
+		global.pickup = 0;
+		//instance_destroy();		
+		start_timer = true;
+	}
+	if( place_meeting(x, y, obj_pipe_exit) ){ // is there a collision
+		//visible = false;
+		instance_destroy();
+		global.pickup = 0;
+		global.has_item = false;
+		//start_timer = true;
 	}
 	
 	if (start_timer){
 		timer++;
 	}
 	
-	if (room_speed * timer == 30){
+	if (timer == 30){
 		visible = true;
 		timer = 0;
 		start_timer = false;

@@ -1,8 +1,8 @@
 {
-    "id": "b7e70644-e352-4b58-8fc5-6b324384b694",
+    "id": "eee2442c-94e4-466c-8b8e-aa44e735113d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_pipe",
+    "name": "obj_pipe_exit",
     "eventList": [
         
     ],
@@ -22,28 +22,28 @@
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "c77a79d6-07b3-4ac9-aa85-4dece5e5f9f6",
+            "id": "fdd70ec3-60c6-4e26-816d-ec8d360e0d96",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
             "y": 0
         },
         {
-            "id": "6152013d-56f6-4d29-939f-bcf730000bfa",
+            "id": "31e17eaa-d82c-4466-b737-b50b65c4db13",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 70,
             "y": 0
         },
         {
-            "id": "88383787-096e-4e14-a7e6-31b90ca4abf2",
+            "id": "d4d90338-4554-431c-8275-71cb0456c783",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 70,
             "y": 70
         },
         {
-            "id": "05d4a550-11cc-4fd3-ada2-03123b191232",
+            "id": "75f619f0-e441-447c-80f4-73011ca9b362",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
