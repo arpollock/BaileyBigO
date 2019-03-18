@@ -17,5 +17,5 @@ grav = 0.3;
 hp = 5;
 hp_cooldown = 0;
 
-global.pickup = 0;
+global.bailey_pickup = 0;
 global.bailey_has_item = false;

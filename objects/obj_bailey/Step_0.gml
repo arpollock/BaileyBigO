@@ -128,16 +128,16 @@ Near_bird = instance_nearest(x, y, obj_binaryBird);
 
 if( place_meeting(x+horizontalSpeed, y, Near_bird) ){ // is there a collision
 	if (global.bailey_has_item = false){
-		global.pickup = Near_bird.id;
+		global.bailey_pickup = Near_bird.id;
 		global.bailey_has_item = true;
 	}		
 }
-if (global.pickup > 0) {
-	global.pickup.x = x; //here I refer to the id that's held in pickup
-	global.pickup.y = y - 8;
+if (global.bailey_pickup > 0) {
+	global.bailey_pickup.x = x; //here I refer to the id that's held in pickup
+	global.bailey_pickup.y = y - 8;
 }
-if( keyboard_check(dropKey) && global.pickup >0 ){
-	global.pickup.y = y + 16;
-	global.pickup = 0;
-	global.has_item =false;
+if( keyboard_check(dropKey) && global.bailey_pickup >0 ){
+	global.bailey_pickup.y = y + 16;
+	global.bailey_pickup = 0;
+	global.bailey_has_item =false;
 }
