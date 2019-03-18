@@ -10,3 +10,5 @@ grav = 0.3;
 timer = 0;
 carried = false;
 start_timer = false;
+sprite_index = choose(spr_binaryBird1, spr_binaryBird2, spr_binaryBird3);
+
