@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "228cd04c-c2b2-4a5f-a0e6-4571fc405b4b",
+            "Value": {
+                "id": "86dee3e0-79b3-4c2c-97f7-7941a51d3fbf",
+                "resourcePath": "sprites\\spr_door\\spr_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2765e59f-545c-46eb-a9f3-211ea03d79c3",
             "Value": {
                 "id": "1e82c2ae-8a93-4f1c-8e88-f72f19df9228",
@@ -503,6 +511,14 @@
             }
         },
         {
+            "Key": "615b32d7-d2cc-452c-b593-f9fcf622362c",
+            "Value": {
+                "id": "371ede28-1dd0-4b09-90f0-ea6fc19e794a",
+                "resourcePath": "sprites\\spr_pipeEnter\\spr_pipeEnter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "625260f6-0142-4517-a5c0-6d03ffb308b4",
             "Value": {
                 "id": "83a9e80c-8a0c-4266-a947-1b60e05f60e2",
@@ -691,6 +707,14 @@
             "Value": {
                 "id": "8694207a-ce1b-414a-b5b7-7b19a58d94e1",
                 "resourcePath": "objects\/obj_startPuz\/obj_startPuz.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "892c0308-7404-432f-81f1-e1e5734f57ce",
+            "Value": {
+                "id": "2875bed6-1314-408e-a97f-d54070120914",
+                "resourcePath": "objects\\obj_pipe_in\\obj_pipe_in.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1179,6 +1203,14 @@
             "Value": {
                 "id": "04edde0a-f796-40f2-859a-97f9864633af",
                 "resourcePath": "objects\/obj_binaryBird\/obj_binaryBird.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ede9bf0b-2555-4ba8-81cc-55917e7786f7",
+            "Value": {
+                "id": "ab7f07e1-f045-4980-9f05-666c66d136af",
+                "resourcePath": "objects\\obj_puzzle3\\obj_puzzle3.yy",
                 "resourceType": "GMObject"
             }
         },

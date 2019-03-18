@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite(spr_binaryBird1, image_index, x, y);
+
+draw_self();
+//draw_sprite(spr_binaryBird1, image_index, x, y);
 //draw_sprite(spr_binaryBird2, image_index, x, y);
 //draw_sprite(spr_binaryBird3, image_index, x, y);
 
