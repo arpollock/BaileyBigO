@@ -19,7 +19,7 @@
 		visible = false;
 		x = obj_yPipe_out.x;
 		y = obj_yPipe_out.y;
-		global.has_item = false;
+		global.bailey_has_item = false;
 		global.pickup = 0;
 		//instance_destroy();		
 		start_timer = true;
@@ -28,7 +28,7 @@
 		visible = false;
 		x = obj_rPipe_out.x;
 		y = obj_rPipe_out.y+sprite_height;
-		global.has_item = false;
+		global.bailey_has_item = false;
 		global.pickup = 0;
 		//instance_destroy();		
 		start_timer = true;

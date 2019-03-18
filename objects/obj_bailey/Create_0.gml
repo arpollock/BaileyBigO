@@ -18,4 +18,4 @@ hp = 5;
 hp_cooldown = 0;
 
 global.pickup = 0;
-global.has_item = false;
+global.bailey_has_item = false;

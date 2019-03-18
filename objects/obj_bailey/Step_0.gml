@@ -123,11 +123,13 @@ if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly))
 if (keyboard_check(ord("Q"))){
 	room_goto(room_quit);
 }
-if( place_meeting(x+horizontalSpeed, y, obj_binaryBird) ){ // is there a collision
-	if (global.has_item = false){
-		global.pickup = obj_binaryBird.id;
-		//obj_binaryBird.carried = true;
-		global.has_item = true;
+
+Near_bird = instance_nearest(x, y, obj_binaryBird); 
+
+if( place_meeting(x+horizontalSpeed, y, Near_bird) ){ // is there a collision
+	if (global.bailey_has_item = false){
+		global.pickup = Near_bird.id;
+		global.bailey_has_item = true;
 	}		
 }
 if (global.pickup > 0) {
