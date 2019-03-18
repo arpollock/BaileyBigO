@@ -40,6 +40,7 @@
 		instance_destroy();
 		global.bailey_pickup = 0;
 		global.bailey_has_item = false;
+		global.enemiesCompleted++;
 		//start_timer = true;
 	}
 	

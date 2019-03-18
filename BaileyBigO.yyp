@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "1173616e-c54c-4141-9e0e-3d591ed976fb",
+            "Value": {
+                "id": "b57dbc5c-16b8-4135-a3d9-39d1e8deb8b4",
+                "resourcePath": "fonts\\font_bender_score\\font_bender_score.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1182c9db-0d66-42c1-b5d1-415ea27ebf07",
             "Value": {
                 "id": "ebce80a0-ecb4-42dd-9ecb-492170543e30",
