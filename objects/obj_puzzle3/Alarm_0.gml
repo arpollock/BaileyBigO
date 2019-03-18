@@ -4,4 +4,4 @@ if (enemiesSpawned < maxEnemies){
 	instance_create_layer(obj_pipe_in.x, obj_pipe_in.y,"Instances_birds", obj_binaryBird);
 	enemiesSpawned++;
 }
-alarm[0] = room_speed * 5;
+alarm[0] = room_speed;

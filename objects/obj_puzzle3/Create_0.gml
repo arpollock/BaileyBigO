@@ -3,7 +3,7 @@
 enemiesSpawned=0
 global.enemiesCompleted = 0;
 maxEnemies = 20;
-alarm[0] = room_speed * 2;
+alarm[0] = room_speed;
 time = 240;
 alarm[1] = room_speed;
 
