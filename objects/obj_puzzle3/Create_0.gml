@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-enemiesSpawned=0
+enemiesSpawned=1;
 global.enemiesCompleted = 0;
-maxEnemies = 20;
-alarm[0] = room_speed;
-time = 240;
-alarm[1] = room_speed;
+maxEnemies = 10;
+alarm[0] = room_speed *10;
+time = 90;
+alarm[1] = room_speed *2;
 
 
 //need to figure out why they are coming in so high

@@ -17,12 +17,12 @@
 	//only nelly can put in the yellow pipe
 	if( place_meeting(x, y, obj_yPipe_in) && global.nelly_pickup = id){ // is there a collision
 		visible = false;
-		x = obj_yPipe_out.x;
+		x = obj_yPipe_out.x + 10;
 		y = obj_yPipe_out.y;
 		global.nelly_has_item = false;
 		global.nelly_pickup = 0;
 		//instance_destroy();		
-		start_timer = true;
+		alarm[1] = room_speed * 10;
 	}
 	//only bailey can put in the red pipes
 	if( place_meeting(x, y, obj_rPipe_in) && global.bailey_pickup = id ){ // is there a collision
@@ -32,7 +32,7 @@
 		global.bailey_has_item = false;
 		global.bailey_pickup = 0;
 		//instance_destroy();		
-		start_timer = true;
+		alarm[0] = room_speed * 20;
 	}
 	//only bailey can put them through the exit pipe
 	if( place_meeting(x, y, obj_pipe_exit) && global.bailey_pickup = id ){ // is there a collision
@@ -44,12 +44,3 @@
 		//start_timer = true;
 	}
 	
-	if (start_timer){
-		timer++;
-	}
-	
-	if (timer == 200){
-		visible = true;
-		timer = 0;
-		start_timer = false;
-	}
