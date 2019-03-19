@@ -29,10 +29,6 @@ else if (position_meeting(x,y-obj_turtle.sprite_height,obj_bailey)){
 else{
 	//do nothing
 }
-//check if bailey died
-if (obj_bailey.hp==0){
-	room_restart();
-}
 
 //make sure a turtle exists 
 if (instance_exists(obj_turtle)){
@@ -63,24 +59,39 @@ if (instance_exists(obj_turtle)){
 		//do nothing
 	}
 }
-//check if nelly died
-if (obj_nelly.hp==0){
-	room_restart();
-}
 
 
 if(pos <= stride){
-	x += spd;
-	image_xscale = 1;
+	//Horizontal Collision
+	if (place_meeting(x+spd,y,obj_platform)){
+		 x -= spd;	
+		image_xscale = -1;
+		pos = stride + 1;
+	}
+	else{
+		x += spd;
+		image_xscale = 1;
+	}
 }
 else if(pos > stride and pos <= stride*2){
-	x -= spd;	
-	image_xscale = -1;
+	//Horizontal Collision
+	if (place_meeting(x-spd,y,obj_platform)){
+		 x += spd;	
+		image_xscale = 1;
+		pos = 0;
+	}
+	else{
+		x -= spd;
+		image_xscale = -1;
+	}
 }
 else{
 	pos = 0;
 }
+
 pos+=spd;
+
+
 
 //Fall off platforms
 verticalSpeed = verticalSpeed + grav
@@ -99,6 +110,13 @@ if (obj_bailey.hp_cooldown > 0){
 if (obj_nelly.hp_cooldown > 0){
 	obj_nelly.hp_cooldown--;
 }
-
+//check if nelly died
+if (obj_nelly.hp==0){
+	room_restart();
+}
+//check if bailey died
+if (obj_bailey.hp==0){
+	room_restart();
+}
 
 

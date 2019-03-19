@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-stride = 150; //the pace length
+stride = 250; //the pace length
 pos = 0;	  //current loc along the stride
 spd = 2;
 verticalSpeed = 0;

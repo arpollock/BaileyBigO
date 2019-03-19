@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0f831139-a7cb-44fa-af4d-585ff36f2add",
+            "Value": {
+                "id": "0c8a3faa-458c-4889-adde-45dd488bc11b",
+                "resourcePath": "sprites\\spr_black_pipe\\spr_black_pipe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1173616e-c54c-4141-9e0e-3d591ed976fb",
             "Value": {
                 "id": "b57dbc5c-16b8-4135-a3d9-39d1e8deb8b4",
@@ -236,6 +244,14 @@
                 "id": "83c66b6a-b03c-4b63-b3b2-b5f1573be54c",
                 "resourcePath": "rooms\/room_gameover\/room_gameover.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2f83b332-c939-4d39-89be-872af39148ca",
+            "Value": {
+                "id": "97d47734-1d49-4e6a-9490-c9883be1034e",
+                "resourcePath": "tilesets\\tileset_blackPipe\\tileset_blackPipe.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -519,6 +535,14 @@
             }
         },
         {
+            "Key": "5f94fd4c-fdaa-47b8-850f-1ed563332a6c",
+            "Value": {
+                "id": "cf8c7c49-e08b-4f03-825b-1d1b28b2f5d0",
+                "resourcePath": "objects\\obj_opipe_exit\\obj_opipe_exit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "60308eb3-9d11-4195-a654-12ffee7b96ad",
             "Value": {
                 "id": "5c6388d5-b6b6-4171-855e-c1bfdecb85d7",
@@ -556,6 +580,14 @@
                 "id": "83a9e80c-8a0c-4266-a947-1b60e05f60e2",
                 "resourcePath": "sprites\/spr_metalTriangleL\/spr_metalTriangleL.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "63267552-6416-4898-a57c-d075044982b9",
+            "Value": {
+                "id": "0e1ca7b0-5e45-4c2d-913a-942beaa549a9",
+                "resourcePath": "objects\\obj_platform3\\obj_platform3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -724,6 +756,14 @@
                 "id": "401041eb-c43c-43c2-8282-f88f56424aee",
                 "resourcePath": "sprites\/spr_metalLeft\/spr_metalLeft.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "85372be2-ffd7-46a0-b3dc-3a2a75a008f5",
+            "Value": {
+                "id": "726ace35-4b7d-4965-a232-e391aba73e28",
+                "resourcePath": "objects\\obj_ypipe_exit\\obj_ypipe_exit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1196,6 +1236,14 @@
                 "id": "b086232a-0be2-4e43-a16b-edb6dee2f199",
                 "resourcePath": "views\/ddc394ed-2f6c-4a6b-8657-d67212662f97.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "df196d73-1739-46a0-b1d4-05bc269de65e",
+            "Value": {
+                "id": "5064968d-54c2-4650-94d9-e76db0b372a5",
+                "resourcePath": "objects\\obj_rpipe_exit\\obj_rpipe_exit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
