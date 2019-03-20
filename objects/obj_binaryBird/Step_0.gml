@@ -74,6 +74,7 @@ else{
 			global.nelly_pickup = 0;
 			global.nelly_has_item = false;
 		}
+		global.enemiesCompleted++;
 	}
 	
 	if( place_meeting(x, y, obj_rpipe_exit) && sprite_index == spr_binaryBird1 && (global.bailey_has_item == true || global.nelly_has_item == true)){ // is there a collision
@@ -86,6 +87,7 @@ else{
 			global.nelly_pickup = 0;
 			global.nelly_has_item = false;
 		}
+		global.enemiesCompleted++;
 	}
 	if( place_meeting(x, y, obj_ypipe_exit) && sprite_index == spr_binaryBird2 && (global.bailey_has_item == true || global.nelly_has_item == true)){ // is there a collision
 		instance_destroy();
@@ -97,5 +99,6 @@ else{
 			global.nelly_pickup = 0;
 			global.nelly_has_item = false;
 		}
+		global.enemiesCompleted++;
 	}
 	
