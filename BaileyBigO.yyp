@@ -324,6 +324,25 @@
             }
         },
         {
+            "Key": "1fb1ae76-8b56-4e89-8024-8f5d48fdaf6c",
+            "Value": {
+                "id": "4f8cc9e4-a136-46fa-9e65-c48506024658",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_platform1\/obj_platform1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2765e59f-545c-46eb-a9f3-211ea03d79c3",
             "Value": {
                 "id": "1e82c2ae-8a93-4f1c-8e88-f72f19df9228",
@@ -2582,6 +2601,25 @@
                 ],
                 "resourcePath": "rooms\/room_1_platform\/room_1_platform.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f0194158-b3d1-425e-8d9e-472d0055a2d1",
+            "Value": {
+                "id": "8bcc124e-01c2-450c-8d83-20e169d0c857",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_binaryBirdPlatform1\/obj_binaryBirdPlatform1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
