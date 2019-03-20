@@ -58,12 +58,10 @@ else{
 	}
 	//only bailey can put them through the exit pipe
 	if( place_meeting(x, y, obj_pipe_exit) && global.bailey_pickup == id ){ // is there a collision
-		//visible = false;
 		instance_destroy();
 		global.bailey_pickup = 0;
 		global.bailey_has_item = false;
 		global.enemiesCompleted++;
-		//start_timer = true;
 	}
 	
 	if( place_meeting(x, y, obj_opipe_exit) && sprite_index == spr_binaryBird3 && (global.bailey_has_item == true || global.nelly_has_item == true)){ // is there a collision
