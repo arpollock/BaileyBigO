@@ -85,3 +85,22 @@ if(!place_meeting(x, y + 1, obj_platform) && !(place_meeting(x,y+1,obj_bailey)))
 if( keyboard_check(pickUpKey) ){
 	
 }
+
+Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird); 
+if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
+	if (Near_bird.visible == true){
+		if (global.nelly_has_item = false){
+			global.nelly_pickup = Near_bird.id;
+			global.nelly_has_item = true;
+		}	
+	}
+}
+if (global.nelly_pickup > 0) {
+	global.nelly_pickup.x = x; //here I refer to the id that's held in pickup
+	global.nelly_pickup.y = y - 8;
+}
+if( keyboard_check(dropKey) && global.nelly_pickup >0 ){
+	global.nelly_pickup.y = y + 16;
+	global.nelly_pickup = 0;
+	global.nelly_has_item =false;
+}

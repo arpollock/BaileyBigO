@@ -15,6 +15,8 @@ if( keyboard_check(leftKey) ){ // move left
 		}
 		horizontalSpeed = 0;
 	}
+	
+	
 	if( place_meeting(x-horizontalSpeed, y, obj_nelly) ){ 
 		horizontalSpeed = 0;
 	}
@@ -47,12 +49,22 @@ if( keyboard_check(leftKey) ){ // move left
 if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
+/*
+if( place_meeting(x, y+1, obj_pipe) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
+	jumps = MAX_JUMPS;
+}
+*/
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
 	verticalSpeed = jumpVal;
 	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
 	verticalSpeed = 0;
 }
+/*
+else if( place_meeting(x, y, obj_pipe) ){ // on ground not jumping
+	verticalSpeed = 0;
+}
+*/
 
 // TODO: implement crouch
 if( keyboard_check(crouchKey) ){ // crouch
@@ -68,6 +80,15 @@ if( place_meeting(x, y+verticalSpeed, obj_platform) ){ // is there a collision?
 	}
 	verticalSpeed = 0;
 }
+/*
+if( place_meeting(x, y+verticalSpeed, obj_pipe) ){ // is there a collision?
+	// yes, don't fall completely, fall to floor 
+	while( !place_meeting(x, y+sign(verticalSpeed), obj_pipe) ){
+		y=y+sign(verticalSpeed);
+	}
+	verticalSpeed = 0;
+}
+*/
 if( place_meeting(x, y+verticalSpeed, obj_nelly) ){ 
 	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly) ){
 		y=y+sign(verticalSpeed);
@@ -80,12 +101,28 @@ if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly))
 	sprite_index = spr_baileyJump;
 }
 
-if( keyboard_check(pickUpKey) ){
-	
-}
+
 
 //check if q is pressed to quit the game
 if (keyboard_check(ord("Q"))){
 	room_goto(room_quit);
 }
 
+Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird); 
+if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
+	if (Near_bird.visible == true){
+		if (global.bailey_has_item = false){
+			global.bailey_pickup = Near_bird.id;
+			global.bailey_has_item = true;
+		}		
+	}
+	if (global.bailey_pickup > 0) {
+		global.bailey_pickup.x = x; //here I refer to the id that's held in pickup
+		global.bailey_pickup.y = y - 8;
+	}
+	if( keyboard_check(dropKey) && global.bailey_pickup >0 ){
+		global.bailey_pickup.y = y + 16;
+		global.bailey_pickup = 0;
+		global.bailey_has_item =false;
+	}
+}

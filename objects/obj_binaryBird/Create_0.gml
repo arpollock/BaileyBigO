@@ -1,9 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-p_scale = .05;
-p_side = 1;
-p_spr = spr_binaryBird1;
-p_ind = 0;
-x_start = x;
-x_speed = 1;
-fly = 1;
+
+
+stride = 250; //the pace length
+pos = 0;	  //current loc along the stride
+spd = 2;
+verticalSpeed = 0;
+grav = 0.3;
+carried = false;
+sprite_index = choose(spr_binaryBird1, spr_binaryBird2, spr_binaryBird3);
+alarm[0] = 0;
+alarm[1] = 0;
+
+

@@ -4,6 +4,7 @@ rightKey = vk_right;
 jumpKey = vk_up;
 crouchKey = vk_down;
 pickUpKey = vk_rcontrol;
+dropKey = vk_space;
 
 jumpVal = -7;
 jumps = 0;
@@ -17,3 +18,5 @@ grav = 0.3;
 hp = 5;
 hp_cooldown = 0;
 
+global.nelly_pickup = 0;
+global.nelly_has_item = false;
