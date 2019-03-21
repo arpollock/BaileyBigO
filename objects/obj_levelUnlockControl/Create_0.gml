@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(obj_levelUnlockControl.currentLevel >= 5){
-	//room_goto(room_3_platform);
-}
+persistent = true;
+currentLevel = 1;
+maxLevel = 6;

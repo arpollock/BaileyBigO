@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "431866ac-1b75-466a-afe8-87560d067bc9",
+            "Value": {
+                "id": "d4be9ae6-9b01-421e-95f5-4e0a0abf9665",
+                "resourcePath": "objects\\obj_levelUnlockControl\\obj_levelUnlockControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44cb3046-e850-4ea3-b4b3-1b69352cd3e1",
             "Value": {
                 "id": "a2ac1cdc-2eaf-4f54-b9e5-ca235638dd49",
@@ -1135,6 +1143,14 @@
             }
         },
         {
+            "Key": "c432a143-5859-499c-8501-1b3980f6d115",
+            "Value": {
+                "id": "0d0c858a-fa42-4657-bb7b-9c864f2eddc5",
+                "resourcePath": "scripts\\script_finishLevelIncr\\script_finishLevelIncr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c4851e17-3a75-4150-84fd-6ecbe85109ef",
             "Value": {
                 "id": "b6d2f860-dcff-410b-bbb4-6704f14524ed",
@@ -1600,7 +1616,7 @@
         }
     ],
     "script_order": [
-        
+        "c432a143-5859-499c-8501-1b3980f6d115"
     ],
     "tutorial": ""
 }

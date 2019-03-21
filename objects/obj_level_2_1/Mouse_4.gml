@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-//room_goto(room_2_platform);
+
+if(obj_levelUnlockControl.currentLevel >= 3){
+	//room_goto(room_2_platform);
+}
