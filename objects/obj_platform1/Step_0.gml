@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum <= maxi){
+if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 	num = birdGenNum;
 	drawNum = "";
 	if (num >= 8){
