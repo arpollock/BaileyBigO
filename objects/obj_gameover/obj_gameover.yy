@@ -1,19 +1,10 @@
 {
-    "id": "285c00d5-ec2a-4cca-a254-2a8aeb74c8ae",
+    "id": "304469c0-affa-4d7d-be1b-9ada36aecc31",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_title",
+    "name": "obj_gameover",
     "eventList": [
-        {
-            "id": "2c7586f4-41b3-474c-a988-e558c116fa9d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "285c00d5-ec2a-4cca-a254-2a8aeb74c8ae"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a207111f-3353-4fe2-b40e-49e4924d62a6",
+    "spriteId": "1182c9db-0d66-42c1-b5d1-415ea27ebf07",
     "visible": true
 }
