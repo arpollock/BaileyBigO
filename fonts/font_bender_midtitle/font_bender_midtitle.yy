@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "name": "font_bender_midtitle",
     "AntiAlias": 1,
-    "TTFName": "",
+    "TTFName": "${project_dir}\/fonts\/font_bender_midtitle\/Jovanny Lemonad - Bender-Bold.otf",
     "ascenderOffset": 0,
     "bold": true,
     "charset": 0,
@@ -1453,7 +1453,7 @@
         }
     ],
     "image": null,
-    "includeTTF": false,
+    "includeTTF": true,
     "italic": false,
     "kerningPairs": [
         {
