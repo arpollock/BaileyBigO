@@ -6,4 +6,4 @@ if (enemiesSpawned < maxEnemies){
 }
 instance_create_layer(obj_yPipe_out.x-10, obj_yPipe_out.y,"Instances_birds", obj_turtle_l3);
 
-alarm[0] = room_speed *10;
+alarm[0] = room_speed *20;
