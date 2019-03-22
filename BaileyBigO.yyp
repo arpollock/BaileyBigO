@@ -879,14 +879,6 @@
             }
         },
         {
-            "Key": "73b33752-7e10-42f8-922d-b715d2b92d6f",
-            "Value": {
-                "id": "792080bd-1b59-4f86-b81e-7855273da60b",
-                "resourcePath": "objects\\obj_symbol\\obj_symbol.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "74c755e7-afb8-4f31-beb2-ab088d3bfedf",
             "Value": {
                 "id": "13aae3ae-f516-493f-92e8-58cb268ebc8b",
