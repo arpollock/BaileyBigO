@@ -19,3 +19,11 @@
 	
 	draw_set_font(font_bender_subtitle);
 	draw_text(room_width/2, room_height-25, "Press [space] to Exit");
+	
+	if(baileyTalk){
+		draw_sprite(spr_bailey, 1, room_width/2 - 400, room_height/2);
+	}
+	
+	if(nellyTalk){
+		draw_sprite(spr_nelly, 1, room_width/2 + 400, room_height/2);
+	}

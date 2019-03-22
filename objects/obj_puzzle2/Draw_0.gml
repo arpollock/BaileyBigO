@@ -10,3 +10,6 @@ draw_set_valign(fa_middle);
 for(i = 0; i < 11; i++){
 	draw_text((room_width/2 - 350) + i*64, room_height/2, array[i]);
 }
+
+draw_text((room_width/2 - 300), 100, "Number of Guesses: ");
+draw_text((room_width/2 - 100), 100, numGuesses);
