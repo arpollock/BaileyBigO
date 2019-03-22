@@ -1,28 +1,28 @@
 {
-    "id": "0040dd11-f5d6-4453-9cbd-ffe804c14229",
+    "id": "5304f0f6-cb7b-4acc-9a37-081b7d4b9d2a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_nellyPuzzle",
+    "name": "obj_baileyPuzzle1",
     "eventList": [
         {
-            "id": "619bb858-d22c-470d-af47-be2db3b643f2",
+            "id": "2826dedf-be9b-4036-b492-e9cbd7f930cb",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0040dd11-f5d6-4453-9cbd-ffe804c14229"
+            "m_owner": "5304f0f6-cb7b-4acc-9a37-081b7d4b9d2a"
         },
         {
-            "id": "a5afecaa-85d9-4de1-8273-8e97104a1620",
+            "id": "65bfede4-7bb1-4e19-9f6f-118d62bb766b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "0040dd11-f5d6-4453-9cbd-ffe804c14229"
+            "m_owner": "5304f0f6-cb7b-4acc-9a37-081b7d4b9d2a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "168a16cf-75e4-4869-bb74-49bb60ab6b69",
+    "spriteId": "60308eb3-9d11-4195-a654-12ffee7b96ad",
     "visible": true
 }

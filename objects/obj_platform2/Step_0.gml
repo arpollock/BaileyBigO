@@ -14,5 +14,6 @@ if(obj_sink.itemsRecieved and obj_tv.itemsRecieved and obj_basket.itemsRecieved)
 	//Display message and activate the door
 	
 	//When player opens the door, go to room_2_puzzle
-	
+	obj_levelUnlockControl.currentLevel++;
+	room_goto(level_select_screen);
 }

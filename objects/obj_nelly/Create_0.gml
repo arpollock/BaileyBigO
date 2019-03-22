@@ -3,7 +3,7 @@ leftKey = vk_left;
 rightKey = vk_right;
 jumpKey = vk_up;
 crouchKey = vk_down;
-pickUpKey = vk_rcontrol;
+pickUpKey = vk_enter;
 
 jumpVal = -7;
 jumps = 0;
