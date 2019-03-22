@@ -44,7 +44,7 @@ if (global.popups == 1){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey:";
 	obj_storyPopUp.content = "Hey there! I'm Bailey Big Oh, and this is my partner, Nelly Little N. Will you help us defeat the turtles?";
-	//obj_storyPopUp.bailyShow = true;
+	obj_storyPopUp.baileyTalk = true;
 	global.popups = 2;
 }
 
@@ -52,7 +52,7 @@ if global.popups == 3{
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Nelly:";
 	obj_storyPopUp.content = "Yeah! Those ankle-biters are cruisin' for a bruisin'!";
-	//obj_storyPopUp.nellyShow = true;
+	obj_storyPopUp.nellyTalk = true;
 	global.popups = 4;
 }
 
@@ -60,14 +60,13 @@ if global.popups == 5{
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Level 1, Binary Birds";
 	obj_storyPopUp.content = "Bailey and Nelly want to go save the world and stop those Time Complexity Turtles, but Bailey Big Oh's binary birds have gotten loose! Help Bailey and Nelly collect the birds - in the correct order - and return them to their home. Bailey can grab things with [spacebar], and will drop it when [spacebar] is hit again. Nelly does the same with the [enter].";
-	//obj_storyPopUp.nellyShow = true;
 	global.popups = 6;
 }
 
 if global.popups == 8{
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
-	obj_storyPopUp.title = "Hooray!";
-	obj_storyPopUp.content = "You collected all of the birds! Organize the birds into their correct binary numbers to proceed!";
+	obj_storyPopUp.title = "Bailey:";
+	obj_storyPopUp.content = "Thank you for helping me save my birds! Now that they're safe and sound, let's go save Bitsburg from the Time Complexity Turtles!";
 	global.popups = 9;
 }
 
