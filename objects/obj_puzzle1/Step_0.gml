@@ -21,6 +21,7 @@ if(complete){
 	pieces[stage].visible = true;
 	stage++;
 	if (stage >= 4) {
+		script_finishLevelIncr(2);
 		room_goto(level_select_screen);
 	} else {
 		//redraw = true;

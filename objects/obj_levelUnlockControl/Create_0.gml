@@ -2,8 +2,8 @@
 // You can write your code in this editor
 fileName = "Save.sav";
 persistent = true;
-currentLevel = 1;
-maxLevel = 6;
+global.currentLevel = 1;
+global.maxLevel = 6;
 // load old data if it exists
 if(file_exists(fileName)){
 	var LoadFile = file_text_open_read(fileName);

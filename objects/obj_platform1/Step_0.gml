@@ -38,5 +38,6 @@ if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 
 
 if (birdCollectNum >= maxi){
+	script_finishLevelIncr(1);
 	room_goto(level_select_screen);
 }

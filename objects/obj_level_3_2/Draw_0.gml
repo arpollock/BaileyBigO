@@ -3,7 +3,7 @@
 draw_self();
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-if(obj_levelUnlockControl.currentLevel >= 6){
+if(global.currentLevel >= 6){
 	draw_set_color(make_color_rgb(214,37,37));
 }else{
 	draw_set_color(make_color_rgb(71,73,73));

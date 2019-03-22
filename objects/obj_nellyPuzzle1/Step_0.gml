@@ -6,7 +6,7 @@ horizontalSpeed = walkSpeed;
 if( keyboard_check(upKey) ){ // move up
 	
 	sprite_index = spr_nellyWalk;
-	if( place_meeting(x, y-verticalSpeed, obj_baileyPuzzle) || y-verticalSpeed-sprite_height < 0 ){ 
+	if( place_meeting(x, y-verticalSpeed, obj_baileyPuzzle1) || y-verticalSpeed-sprite_height < 0 ){ 
 		verticalSpeed = 0;
 	}
 	y = y - verticalSpeed;
@@ -14,7 +14,7 @@ if( keyboard_check(upKey) ){ // move up
 }else if( keyboard_check(downKey) ){ // move down
 	
 	sprite_index = spr_nellyWalk;
-	if( place_meeting(x, y+verticalSpeed, obj_baileyPuzzle) || y+verticalSpeed > room_height ){ 
+	if( place_meeting(x, y+verticalSpeed, obj_baileyPuzzle1) || y+verticalSpeed > room_height ){ 
 		verticalSpeed = 0;
 	}
 	y = y + verticalSpeed;
@@ -25,7 +25,7 @@ if( keyboard_check(leftKey) ){ // move left
 	
 	sprite_index = spr_nellyWalk;
 	image_xscale = -1;
-	if( place_meeting(x-horizontalSpeed, y, obj_baileyPuzzle) || x-horizontalSpeed+sprite_width/2 < 0 ){ 
+	if( place_meeting(x-horizontalSpeed, y, obj_baileyPuzzle1) || x-horizontalSpeed+sprite_width/2 < 0 ){ 
 		horizontalSpeed = 0;
 	}
 	x = x - horizontalSpeed;
@@ -34,7 +34,7 @@ if( keyboard_check(leftKey) ){ // move left
 	
 	sprite_index = spr_nellyWalk;
 	image_xscale = 1;
-	if( place_meeting(x+horizontalSpeed, y, obj_baileyPuzzle) || x+sprite_width/2+horizontalSpeed > room_width ){ 
+	if( place_meeting(x+horizontalSpeed, y, obj_baileyPuzzle1) || x+sprite_width/2+horizontalSpeed > room_width ){ 
 		horizontalSpeed = 0;
 	}
 	x = x + horizontalSpeed;

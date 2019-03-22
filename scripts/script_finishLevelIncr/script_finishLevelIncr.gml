@@ -1,3 +1,3 @@
-if( obj_levelUnlockControl.currentLevel < obj_levelUnlockControl.maxLevel ){
-	currentLevel++;
+if( global.currentLevel < global.maxLevel && argument0 == global.currentLevel){
+	global.currentLevel++;
 }
