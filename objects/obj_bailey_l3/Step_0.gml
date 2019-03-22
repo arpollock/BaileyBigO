@@ -16,7 +16,7 @@ if( keyboard_check(leftKey) ){ // move left
 	}
 	
 	
-	if( place_meeting(x-horizontalSpeed, y, obj_nelly) ){ 
+	if( place_meeting(x-horizontalSpeed, y, obj_nelly_l3_l3) ){ 
 		horizontalSpeed = 0;
 	}
 	x = x - horizontalSpeed;
@@ -32,7 +32,7 @@ if( keyboard_check(leftKey) ){ // move left
 		}
 		horizontalSpeed = 0;
 	}
-	if( place_meeting(x+horizontalSpeed, y, obj_nelly) ){ 
+	if( place_meeting(x+horizontalSpeed, y, obj_nelly_l3_l3) ){ 
 		horizontalSpeed = 0;
 	}
 	x = x + horizontalSpeed;
@@ -45,11 +45,11 @@ if( keyboard_check(leftKey) ){ // move left
 // only jump from ground: place_meeting(x, y+1, obj_platform)
 // double jump logic: on the ground? -> set jump count to max
 // if jump, jump and jump -= 1
-if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
+if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly_l3_l3)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
 /*
-if( place_meeting(x, y+1, obj_pipe) || place_meeting(x, y+1, obj_nelly)){ // on floor, reset jumps
+if( place_meeting(x, y+1, obj_pipe) || place_meeting(x, y+1, obj_nelly_l3)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
 */
@@ -88,15 +88,15 @@ if( place_meeting(x, y+verticalSpeed, obj_pipe) ){ // is there a collision?
 	verticalSpeed = 0;
 }
 */
-if( place_meeting(x, y+verticalSpeed, obj_nelly) ){ 
-	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly) ){
+if( place_meeting(x, y+verticalSpeed, obj_nelly_l3) ){ 
+	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly_l3) ){
 		y=y+sign(verticalSpeed);
 	}
 	verticalSpeed = 0;
 }
 y = y + verticalSpeed;
 
-if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly))){
+if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly_l3))){
 	sprite_index = spr_baileyJump;
 }
 
@@ -107,7 +107,7 @@ if (keyboard_check(ord("Q"))){
 	room_goto(room_quit);
 }
 
-Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird); 
+Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird_l3); 
 if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
 	if (Near_bird.visible == true){
 		if (global.bailey_has_item = false){

@@ -32,7 +32,7 @@ else{
 	//only nelly can put in the yellow pipe
 	if( place_meeting(x, y, obj_yPipe_in) && global.nelly_pickup == id){ // is there a collision
 		visible = false;
-		//obj_binaryBird.id.sprite_index = spr_binaryBird2;
+		//obj_binaryBird_l3_l3.id.sprite_index = spr_binaryBird2;
 		x = obj_yPipe_out.x+20;
 		y = obj_yPipe_out.y;
 		pos = 0;
@@ -45,8 +45,8 @@ else{
 	//only bailey can put in the red pipes
 	if( place_meeting(x, y, obj_rPipe_in) && global.bailey_pickup == id ){ // is there a collision
 		visible = false;
-		//obj_binaryBird.id.sprite_index = spr_binaryBird1;
-		object_set_sprite(obj_binaryBird, spr_binaryBird1);
+		//obj_binaryBird_l3.id.sprite_index = spr_binaryBird1;
+		object_set_sprite(obj_binaryBird_l3, spr_binaryBird1);
 		x = obj_rPipe_out.x;
 		y = obj_rPipe_out.y+sprite_height;
 		pos = 0;
