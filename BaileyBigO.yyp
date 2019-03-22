@@ -386,7 +386,7 @@
             "Key": "3427b402-28b0-4123-9608-8bc94a358dc6",
             "Value": {
                 "id": "b8712cc9-35a5-4636-95ec-5c66af8c6a9a",
-                "resourcePath": "rooms\\room_3_puzzle\\room_3_puzzle.yy",
+                "resourcePath": "rooms\\room_3_platform\\room_3_platform.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1978,7 +1978,7 @@
             "Key": "fb902bb4-3000-4e6f-8965-82c0e209702c",
             "Value": {
                 "id": "042a3b5d-dd62-4041-ac0e-58b1d3b78150",
-                "resourcePath": "rooms\\room_3_platform\\room_3_platform.yy",
+                "resourcePath": "rooms\\room_3_puzzle\\room_3_puzzle.yy",
                 "resourceType": "GMRoom"
             }
         },
