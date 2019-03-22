@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(obj_levelUnlockControl.currentLevel >= 4){
-	room_goto(room_2_puzzle);
+if(place_meeting(x, y, obj_clothes)){
+	itemsRecieved = true	
 }
