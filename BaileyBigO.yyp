@@ -2053,6 +2053,25 @@
             }
         },
         {
+            "Key": "74b8457a-52b5-4f97-99dc-9a51cb0b9890",
+            "Value": {
+                "id": "c8972cda-77ef-44d1-a036-57bb6c352887",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_unlockAllLevels\/obj_unlockAllLevels.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "74c755e7-afb8-4f31-beb2-ab088d3bfedf",
             "Value": {
                 "id": "13aae3ae-f516-493f-92e8-58cb268ebc8b",

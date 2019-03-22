@@ -4,9 +4,11 @@ fileName = "Save.sav";
 persistent = true;
 global.currentLevel = 1;
 global.maxLevel = 6;
+
 // load old data if it exists
 if(file_exists(fileName)){
 	var LoadFile = file_text_open_read(fileName);
 	currentLevel = file_text_read_real(LoadFile);
 	file_text_close(LoadFile);
 }
+//oldLevel = currentLevel;
