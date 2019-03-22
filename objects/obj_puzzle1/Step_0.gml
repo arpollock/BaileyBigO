@@ -21,7 +21,7 @@ if(complete){
 	pieces[stage].visible = true;
 	stage++;
 	if (stage >= 4) {
-		game_restart();
+		room_goto(level_select_screen);
 	} else {
 		//redraw = true;
 		for(i = 0; i < 4; i++){
