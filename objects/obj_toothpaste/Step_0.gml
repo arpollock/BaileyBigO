@@ -11,10 +11,9 @@ if(cooldown < 0 and pickedUp == false
 	cooldown = max_cooldown
 	holder = obj_bailey
 }
-if(cooldown < 0 and keyboard_check(obj_bailey.pickUpKey)){
+if(cooldown < 0 and keyboard_check(obj_bailey.pickUpKey) and holder == obj_bailey){
 	pickedUp = false
 	cooldown = max_cooldown
-	holder = obj_bailey
 }
 if(cooldown < 0 and pickedUp == false 
 	and place_meeting(x, y, obj_nelly) 
@@ -23,10 +22,9 @@ if(cooldown < 0 and pickedUp == false
 	cooldown = max_cooldown
 	holder = obj_nelly
 }
-if(cooldown < 0 and keyboard_check(obj_nelly.pickUpKey)){
+if(cooldown < 0 and keyboard_check(obj_nelly.pickUpKey) and holder == obj_nelly){
 	pickedUp = false
 	cooldown = max_cooldown
-	holder = obj_nelly
 }
 cooldown = cooldown - 1
 
