@@ -9,5 +9,5 @@ alarm[1] = room_speed *2;
 
 
 //need to figure out why they are coming in so high
-instance_create_layer(obj_pipe_in.x+10, obj_pipe_in.y,"Instances_birds", obj_binaryBird_l3);
+instance_create_layer(obj_pipe_in.x+20, obj_pipe_in.y,"Instances_birds", obj_binaryBird_l3);
 //obj_binaryBird.sprite_index = spr_binaryBird2;

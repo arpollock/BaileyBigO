@@ -10,7 +10,7 @@ if (place_meeting(x,y,obj_bailey_l3)){
 	}
 }
 
-else if (position_meeting(x,y-obj_turtle.sprite_height,obj_bailey_l3)){
+else if (position_meeting(x,y-obj_turtle_l3.sprite_height,obj_bailey_l3)){
 	//check that bailey jumped on the right turtle
 	//if (instance_exists(spr_turtle2){
 		if (sprite_index == spr_turtle2 ){
@@ -31,7 +31,7 @@ else{
 }
 
 //make sure a turtle exists 
-if (instance_exists(obj_turtle)){
+if (instance_exists(obj_turtle_l3)){
 	// Check if nelly collided with turtle
 	if (place_meeting(x,y,obj_nelly_l3)){
 		//whack nelly
@@ -41,7 +41,7 @@ if (instance_exists(obj_turtle)){
 		}
 	}
 
-	else if (position_meeting(x,y-obj_turtle.sprite_height,obj_nelly_l3)){
+	else if (position_meeting(x,y-obj_turtle_l3.sprite_height,obj_nelly_l3)){
 		//check that Nelly jumped on the right turtle
 		if (sprite_index == spr_turtle1){
 			//whack nelly

@@ -16,7 +16,7 @@ if( keyboard_check(leftKey) ){ // move left
 	}
 	
 	
-	if( place_meeting(x-horizontalSpeed, y, obj_nelly_l3_l3) ){ 
+	if( place_meeting(x-horizontalSpeed, y, obj_nelly_l3) ){ 
 		horizontalSpeed = 0;
 	}
 	x = x - horizontalSpeed;
@@ -32,7 +32,7 @@ if( keyboard_check(leftKey) ){ // move left
 		}
 		horizontalSpeed = 0;
 	}
-	if( place_meeting(x+horizontalSpeed, y, obj_nelly_l3_l3) ){ 
+	if( place_meeting(x+horizontalSpeed, y, obj_nelly_l3) ){ 
 		horizontalSpeed = 0;
 	}
 	x = x + horizontalSpeed;
@@ -45,7 +45,7 @@ if( keyboard_check(leftKey) ){ // move left
 // only jump from ground: place_meeting(x, y+1, obj_platform)
 // double jump logic: on the ground? -> set jump count to max
 // if jump, jump and jump -= 1
-if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly_l3_l3)){ // on floor, reset jumps
+if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly_l3)){ // on floor, reset jumps
 	jumps = MAX_JUMPS;
 }
 /*

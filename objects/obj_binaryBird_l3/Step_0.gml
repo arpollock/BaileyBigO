@@ -48,7 +48,7 @@ else{
 		//obj_binaryBird_l3.id.sprite_index = spr_binaryBird1;
 		object_set_sprite(obj_binaryBird_l3, spr_binaryBird1);
 		x = obj_rPipe_out.x;
-		y = obj_rPipe_out.y+sprite_height;
+		y = obj_rPipe_out.y;
 		pos = 0;
 		spd = 0;
 		global.bailey_has_item = false;
