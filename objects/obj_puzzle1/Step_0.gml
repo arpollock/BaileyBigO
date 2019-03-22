@@ -21,7 +21,7 @@ if(complete){
 	pieces[stage].visible = true;
 	stage++;
 	if (stage >= 4) {
-		game_restart();
+		room_goto(level_select_screen);
 	} else {
 		//redraw = true;
 		for(i = 0; i < 4; i++){
@@ -32,5 +32,9 @@ if(complete){
 	}
 }
 
+//check if q is pressed to quit the game
+if (keyboard_check(ord("Q"))){
+	room_goto(room_quit);
+}
 
 
