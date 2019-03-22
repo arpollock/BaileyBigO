@@ -879,20 +879,17 @@
             }
         },
         {
+            "Key": "73b33752-7e10-42f8-922d-b715d2b92d6f",
+            "Value": {
+                "id": "d66152a0-74f8-44d2-996a-df373d82e71a",
+                "resourcePath": "objects\\obj_symbol\\obj_symbol.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "74b8457a-52b5-4f97-99dc-9a51cb0b9890",
             "Value": {
                 "id": "c8972cda-77ef-44d1-a036-57bb6c352887",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
                 "resourcePath": "objects\/obj_unlockAllLevels\/obj_unlockAllLevels.yy",
                 "resourceType": "GMObject"
             }
