@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 horizontalSpeed = walkSpeed;
-if(cooldown < 0 and keyboard_check(rightKey) ){ // move right
+if(!obj_puzzle2.binarySearch and cooldown < 0 and keyboard_check(rightKey) ){ // move right
 	
 	image_xscale = 1;
 	if( place_meeting(x+horizontalSpeed, y, obj_platform) ){ // is there a collision
@@ -18,8 +18,6 @@ if(cooldown < 0 and keyboard_check(rightKey) ){ // move right
 	cooldown = max_cooldown;
 	obj_puzzle2.position++;
 	
-}else{ // not walking, stop animation
-	sprite_index = spr_bailey;
 }
 cooldown--;
 

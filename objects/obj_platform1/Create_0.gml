@@ -6,6 +6,7 @@ birdGenNum = 0;
 birdCollectNum = 0;
 drawNum = "";
 maxBirds = 3;
+<<<<<<< HEAD
 
 global.popups = 0;
 
@@ -15,3 +16,6 @@ instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 
 
 popped_up = false;
+=======
+random_set_seed(current_time);
+>>>>>>> db0b77139f2eb33624f94d34a6ec207041c834ed

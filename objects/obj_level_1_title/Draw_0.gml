@@ -8,4 +8,4 @@ draw_set_color(make_color_rgb(214,37,37));
 draw_set_alpha(1);
 
 draw_set_font(font_bender_midtitle);
-draw_text(x, y, "Level 1: Binary Counting and Strings");
+draw_text(x, y, "Level 1: Binary");
