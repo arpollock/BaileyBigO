@@ -19,7 +19,7 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 	else if(position == ansPosition){
 		//Level complete! they found the hash map!!
 		instance_activate_layer("Prize");
-		
+		script_sfx("win");
 		script_finishLevelIncr(4);
 		room_goto(level_select_screen);
 		
@@ -57,4 +57,9 @@ if(solved){
 	
 	solved = false;
 	binarySearch = true;
+}
+
+//check if q is pressed to quit the game
+if (keyboard_check(ord("Q"))){
+	room_goto(level_select_screen);
 }

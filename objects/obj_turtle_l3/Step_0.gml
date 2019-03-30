@@ -5,6 +5,7 @@
 if (place_meeting(x,y,obj_bailey_l3)){
 	//whack bailey
 	if (obj_bailey_l3.hp_cooldown == 0){
+		script_sfx("hit");
 		obj_bailey_l3.hp--;	
 		obj_bailey_l3.hp_cooldown = 100;
 	}
@@ -16,12 +17,14 @@ else if (position_meeting(x,y-obj_turtle_l3.sprite_height,obj_bailey_l3)){
 		if (sprite_index == spr_turtle2 ){
 			//whack bailey
 			if (obj_bailey_l3.hp_cooldown == 0){
+				script_sfx("hit");
 				obj_bailey_l3.hp--;	
 				obj_bailey_l3.hp_cooldown = 100;
 			}
 		}
 		//if its the right turtle, kill it
 		else{
+			script_sfx("destroy");
 			instance_destroy();
 		}
 	//}
@@ -36,6 +39,7 @@ if (instance_exists(obj_turtle_l3)){
 	if (place_meeting(x,y,obj_nelly_l3)){
 		//whack nelly
 		if (obj_nelly_l3.hp_cooldown == 0){
+			script_sfx("hit");
 			obj_nelly_l3.hp--;	
 			obj_nelly_l3.hp_cooldown = 100;
 		}
@@ -46,12 +50,14 @@ if (instance_exists(obj_turtle_l3)){
 		if (sprite_index == spr_turtle1){
 			//whack nelly
 			if (obj_nelly_l3.hp_cooldown == 0){
+				script_sfx("hit");
 				obj_nelly_l3.hp--;	
 				obj_nelly_l3.hp_cooldown = 100;
 			}
 		}
 		//if its the right turtle, kill it
 		else{
+			script_sfx("destroy");
 			instance_destroy();
 		}
 	}
@@ -112,10 +118,12 @@ if (obj_nelly_l3.hp_cooldown > 0){
 }
 //check if nelly died
 if (obj_nelly_l3.hp==0){
+	script_sfx("game");
 	room_restart();
 }
 //check if bailey died
 if (obj_bailey_l3.hp==0){
+	script_sfx("game");
 	room_restart();
 }
 

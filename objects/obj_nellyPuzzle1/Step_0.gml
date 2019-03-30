@@ -25,7 +25,7 @@ if( keyboard_check(leftKey) ){ // move left
 	
 	sprite_index = spr_nellyWalk;
 	image_xscale = -1;
-	if( place_meeting(x-horizontalSpeed, y, obj_baileyPuzzle1) || x-horizontalSpeed+sprite_width/2 < 0 ){ 
+	if(/* place_meeting(x-horizontalSpeed, y, obj_baileyPuzzle1) || */ x-horizontalSpeed+sprite_width/2 < 0 ){ 
 		horizontalSpeed = 0;
 	}
 	x = x - horizontalSpeed;
@@ -34,7 +34,7 @@ if( keyboard_check(leftKey) ){ // move left
 	
 	sprite_index = spr_nellyWalk;
 	image_xscale = 1;
-	if( place_meeting(x+horizontalSpeed, y, obj_baileyPuzzle1) || x+sprite_width/2+horizontalSpeed > room_width ){ 
+	if( /*place_meeting(x+horizontalSpeed, y, obj_baileyPuzzle1) ||*/ x+sprite_width/2+horizontalSpeed > room_width ){ 
 		horizontalSpeed = 0;
 	}
 	x = x + horizontalSpeed;
@@ -48,6 +48,7 @@ if( keyboard_check_pressed(pickUpKey) ){
 		inst = instance_position(x,y,obj_crate);
 		with(inst){
 			if(active){
+				script_sfx("hit");
 				active = 0;
 			}
 		}

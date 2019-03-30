@@ -26,7 +26,6 @@ if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 	}
 	else drawNum += "0";
 	
-	location = instance_find(obj_platform,irandom(instance_number(obj_platform)));
 	locX = irandom(room_width-128)+64;
 	locY = irandom(room_height-128)+64;;
 	bird = instance_create_layer(locX, locY,"Instances",obj_binaryBirdPlatform1);
@@ -71,10 +70,16 @@ if global.popups == 8{
 }
 
 if (global.popups == 10){
-		show_debug_message("This thing happened");
-		script_finishLevelIncr(1);
-		room_goto(level_select_screen);
-		global.popups = 11;
-	}
+	show_debug_message("This thing happened");
+	script_sfx("win");
+	script_finishLevelIncr(1);
+	room_goto(level_select_screen);
+	global.popups = 11;
+}
 	
 show_debug_message(global.popups);
+
+//check if q is pressed to quit the game
+if (keyboard_check(ord("Q"))){
+	room_goto(level_select_screen);
+}

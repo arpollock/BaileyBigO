@@ -48,6 +48,7 @@ if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_nelly)){ //
 	jumps = MAX_JUMPS;
 }
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
+	script_sfx("jump");
 	verticalSpeed = jumpVal;
 	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
@@ -84,8 +85,5 @@ if( keyboard_check(pickUpKey) ){
 	
 }
 
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(room_quit);
-}
+
 

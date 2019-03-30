@@ -15,5 +15,5 @@ if !mouse_check_button(mb_left) {
 
 if selected_ {
 	value_ = clamp((mouse_x-x)/sprite_width, 0, max_value_);
-	event_user(0);
+	obj_sounds.musicVolume = value_;
 }

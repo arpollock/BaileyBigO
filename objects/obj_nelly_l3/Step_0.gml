@@ -50,16 +50,13 @@ if( place_meeting(x, y+1, obj_platform) || place_meeting(x, y+1, obj_bailey_l3))
 	jumps = MAX_JUMPS;
 }
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
+	script_sfx("jump");
 	verticalSpeed = jumpVal;
 	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
 	verticalSpeed = 0;
 }
 
-// TODO: implement crouch
-if( keyboard_check(crouchKey) ){ // crouch
-	
-}
 
 // Falling
 verticalSpeed = verticalSpeed + grav

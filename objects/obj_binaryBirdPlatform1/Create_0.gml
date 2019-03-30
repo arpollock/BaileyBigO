@@ -1,9 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-//p_side = 1;
 p_ind = 0;
 x_speed = 1;
-//fly = 1;
 num = 0;
 color = 0;
 drawNum = "";

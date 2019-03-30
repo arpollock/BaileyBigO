@@ -54,6 +54,7 @@ if( place_meeting(x, y+1, obj_pipe) || place_meeting(x, y+1, obj_nelly_l3)){ // 
 }
 */
 if( keyboard_check_pressed(jumpKey) && jumps > 0 ){ // pressed is needed to keep from depleting all
+	script_sfx("jump");
 	verticalSpeed = jumpVal;
 	jumps -= 1;
 }else if( place_meeting(x, y, obj_platform) ){ // on ground not jumping
@@ -65,10 +66,6 @@ else if( place_meeting(x, y, obj_pipe) ){ // on ground not jumping
 }
 */
 
-// TODO: implement crouch
-if( keyboard_check(crouchKey) ){ // crouch
-	
-}
 
 // Falling
 verticalSpeed = verticalSpeed + grav
@@ -79,15 +76,7 @@ if( place_meeting(x, y+verticalSpeed, obj_platform) ){ // is there a collision?
 	}
 	verticalSpeed = 0;
 }
-/*
-if( place_meeting(x, y+verticalSpeed, obj_pipe) ){ // is there a collision?
-	// yes, don't fall completely, fall to floor 
-	while( !place_meeting(x, y+sign(verticalSpeed), obj_pipe) ){
-		y=y+sign(verticalSpeed);
-	}
-	verticalSpeed = 0;
-}
-*/
+
 if( place_meeting(x, y+verticalSpeed, obj_nelly_l3) ){ 
 	while( !place_meeting(x, y+sign(verticalSpeed), obj_nelly_l3) ){
 		y=y+sign(verticalSpeed);
@@ -100,12 +89,6 @@ if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly_l
 	sprite_index = spr_baileyJump;
 }
 
-
-
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(room_quit);
-}
 
 Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird_l3); 
 if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
@@ -124,4 +107,10 @@ if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there 
 		global.bailey_pickup = 0;
 		global.bailey_has_item =false;
 	}
+}
+
+
+//check if q is pressed to quit the game
+if (keyboard_check(ord("Q"))){
+	room_goto(level_select_screen);
 }

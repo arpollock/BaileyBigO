@@ -29,20 +29,21 @@ if (p_ind > sprite_get_number(sprite_index)-1){
 	p_ind = 0;
 }	
 
-puzz = instance_find(obj_platform1,0);
-collectNum = puzz.birdCollectNum;
+collectNum = obj_platform1.birdCollectNum;
 if(place_meeting(x,y,obj_bailey)){
 	if(sprite_index != spr_binaryBird2){
-		if (num == puzz.birdCollectNum){
-			puzz.birdCollectNum++;
+		if (num == obj_platform1.birdCollectNum){
+			script_sfx("catch");
+			obj_platform1.birdCollectNum++;
 			instance_destroy();
 		}
 	}
 }
 else if(place_meeting(x,y,obj_nelly)){
 	if(sprite_index != spr_binaryBird1){
-		if (num == puzz.birdCollectNum){
-			puzz.birdCollectNum++;
+		if (num == obj_platform1.birdCollectNum){
+			script_sfx("catch");
+			obj_platform1.birdCollectNum++;
 			instance_destroy();
 		}
 	}

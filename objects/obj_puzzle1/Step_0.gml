@@ -20,7 +20,9 @@ for(i = 0; i < 4; i++){
 if(complete){
 	pieces[stage].visible = true;
 	stage++;
+	script_sfx("destroy");
 	if (stage >= 4) {
+		script_sfx("win");
 		script_finishLevelIncr(2);
 		room_goto(level_select_screen);
 	} else {
@@ -35,7 +37,7 @@ if(complete){
 
 //check if q is pressed to quit the game
 if (keyboard_check(ord("Q"))){
-	room_goto(room_quit);
+	room_goto(level_select_screen);
 }
 
 

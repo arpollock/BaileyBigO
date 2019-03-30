@@ -16,7 +16,6 @@ for(i = 0; i <4; i++){
 		crates[j,i] = inst;
 		vari = irandom(1);
 		inst.active = vari;
-		//inst.visible = false;
 		state[i,j] = vari;
 	}
 }
@@ -42,3 +41,4 @@ for(i = 0; i <4; i++){
 	draw_text(864,168+260*i,binString);	
 }
 	
+random_set_seed(current_time);
