@@ -35,49 +35,55 @@ if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 }
 
 if (birdCollectNum >= maxi && popped_up == false){
-	global.popups += 1;
+	obj_levelUnlockControl.popups += 1;
 	popped_up = true;
 }
 
-if (global.popups == 1){
+if (obj_levelUnlockControl.popups == 1){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey:";
 	obj_storyPopUp.content = "Hey there! I'm Bailey Big Oh, and this is my partner, Nelly Little N. Will you help us defeat the turtles?";
 	obj_storyPopUp.baileyTalk = true;
-	global.popups = 2;
+	obj_levelUnlockControl.popups = 2;
 }
 
-if global.popups == 3{
+if (obj_levelUnlockControl.popups == 3){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Nelly:";
 	obj_storyPopUp.content = "Yeah! Those ankle-biters are cruisin' for a bruisin'!";
 	obj_storyPopUp.nellyTalk = true;
-	global.popups = 4;
+	obj_levelUnlockControl.popups = 4;
 }
 
-if global.popups == 5{
+if (obj_levelUnlockControl.popups == 5){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Level 1, Binary Birds";
-	obj_storyPopUp.content = "Bailey and Nelly want to go save the world and stop those Time Complexity Turtles, but Bailey Big Oh's binary birds have gotten loose! Help Bailey and Nelly collect the birds - in the correct order - and return them to their home. Bailey can grab things with [spacebar], and will drop it when [spacebar] is hit again. Nelly does the same with the [enter].";
-	global.popups = 6;
+	obj_storyPopUp.content = "Bailey and Nelly want to go save the world and stop those Time Complexity Turtles, but Bailey Big Oh's binary birds have been let out! Help Bailey and Nelly collect the birds - in the correct order - and return them to their home.";
+	obj_levelUnlockControl.popups = 6;
 }
 
-if global.popups == 8{
+if (obj_levelUnlockControl.popups == 7){
+	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
+	obj_storyPopUp.title = "Counting in Binary";
+	obj_storyPopUp.content = "Bailey and Nelly can only catch birds of matching colors, and orange birds can be caught by both. To put the birds back properly, you need to collect them in binary order 0 : 0000, 1 : 0001, 2 : 0010, 3 : 0011, and so on. ";
+	obj_levelUnlockControl.popups = 8;
+}
+
+if (obj_levelUnlockControl.popups == 10){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey:";
 	obj_storyPopUp.content = "Thank you for helping me save my birds! Now that they're safe and sound, let's go save Bitsburg from the Time Complexity Turtles!";
-	global.popups = 9;
+	obj_storyPopUp.baileyTalk = true;
+	obj_levelUnlockControl.popups = 11;
 }
 
-if (global.popups == 10){
-	show_debug_message("This thing happened");
+if (obj_levelUnlockControl.popups == 12){
 	script_sfx("win");
 	script_finishLevelIncr(1);
 	room_goto(level_select_screen);
-	global.popups = 11;
+	obj_levelUnlockControl.popups = 13;
 }
-	
-show_debug_message(global.popups);
+
 
 //check if q is pressed to quit the game
 if (keyboard_check(ord("Q"))){

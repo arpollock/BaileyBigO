@@ -3,7 +3,7 @@
 instance_deactivate_layer("Instances")
 
 if( keyboard_check_pressed( vk_space) ){
-	global.popups += 1;
+	obj_levelUnlockControl.popups += 1;
 	instance_activate_layer("Instances")
 	instance_destroy();
 }

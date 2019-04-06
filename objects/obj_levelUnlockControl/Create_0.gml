@@ -4,6 +4,7 @@ fileName = "Save.sav";
 persistent = true;
 global.currentLevel = 1;
 global.maxLevel = 6;
+popups = 0;
 
 // load old data if it exists
 if(file_exists(fileName)){

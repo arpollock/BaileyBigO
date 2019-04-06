@@ -16,15 +16,13 @@ for(i = 0; i < 4; i++){
 		}
 	}
 }
-
 if(complete){
 	pieces[stage].visible = true;
 	stage++;
 	script_sfx("destroy");
 	if (stage >= 4) {
-		script_sfx("win");
-		script_finishLevelIncr(2);
-		room_goto(level_select_screen);
+		obj_levelUnlockControl.popups += 1;
+		stage--;
 	} else {
 		//redraw = true;
 		for(i = 0; i < 4; i++){
@@ -40,4 +38,15 @@ if (keyboard_check(ord("Q"))){
 	room_goto(level_select_screen);
 }
 
+if (obj_levelUnlockControl.popups == 3){
+	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
+	obj_storyPopUp.title = "Nice work!";
+	obj_storyPopUp.content = "Now that those birds are back in order, you can help Bailey and Nelly deal with those darn turtles.";
+	obj_levelUnlockControl.popups = 4;
+}
 
+if (obj_levelUnlockControl.popups >= 5){
+		script_sfx("win");
+		script_finishLevelIncr(2);
+		room_goto(level_select_screen);
+}
