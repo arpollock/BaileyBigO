@@ -18,10 +18,13 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 	} 
 	else if(position == ansPosition){
 		//Level complete! they found the hash map!!
+		
+		instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
+		obj_storyPopUp.title = "You found that Hashmap";
+		obj_storyPopUp.content = "Now Bailey and Nelly have all the tools they need to take on the rest of the turtles!";
+		obj_levelUnlockControl.popups = 3;
+		
 		instance_activate_layer("Prize");
-		script_sfx("win");
-		script_finishLevelIncr(4);
-		room_goto(level_select_screen);
 		
 	}
 	else { //display less than
@@ -57,6 +60,12 @@ if(solved){
 	
 	solved = false;
 	binarySearch = true;
+}
+
+if (obj_levelUnlockControl.popups >= 4){
+	script_sfx("win");
+	script_finishLevelIncr(4);
+	room_goto(level_select_screen);
 }
 
 //check if q is pressed to quit the game
