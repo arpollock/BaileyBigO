@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if (level_start == true){
 	level_start = false;
+	pipe_ram = false;
 	
 	instance_create_layer(pipe_in, pipe_out,"Instances_birds", obj_binaryBird_l3);
 	

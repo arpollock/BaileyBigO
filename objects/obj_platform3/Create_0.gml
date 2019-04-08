@@ -2,8 +2,8 @@
 // You can write your code in this editor
 enemiesSpawned=1;
 global.enemiesCompleted = 0;
-maxEnemies = 6;
-alarm[0] = room_speed *10;
+maxEnemies = 9;
+alarm[0] = room_speed *8;
 time = 90;
 alarm[1] = room_speed *2;
 
@@ -14,9 +14,13 @@ obj_storyPopUp.content = "It looks like the turtles have scared some of the nati
 obj_levelUnlockControl.popups = 1;
 
 level_start = true;
+pipe_ram = true; 
 
 pipe_in = obj_pipe_in.x-100;
 pipe_out = obj_pipe_in.y+100;
+
+rom_in = obj_yPipe_out.x-100;
+rom_out = obj_yPipe_out.y+100;
 
 floor_turtle = obj_turtle_l3;
 top_turtle = obj_turtle_l3;
