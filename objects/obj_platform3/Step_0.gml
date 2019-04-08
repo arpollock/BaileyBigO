@@ -7,11 +7,6 @@ if (global.enemiesCompleted >= maxEnemies){
 	obj_levelUnlockControl.popups = 3;
 }
 
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(level_select_screen);
-}
-
 if (obj_levelUnlockControl.popups == 4){
 	obj_storyPopUp.title = "Nelly:";
 	obj_storyPopUp.content = "Oh, brother!";

@@ -67,8 +67,3 @@ if (obj_levelUnlockControl.popups >= 4){
 	script_finishLevelIncr(4);
 	room_goto(level_select_screen);
 }
-
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(level_select_screen);
-}
