@@ -91,13 +91,19 @@ if(!(place_meeting(x, y + 1, obj_platform)) && !(place_meeting(x,y+1,obj_nelly_l
 
 
 Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird_l3); 
-if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
-	if (Near_bird.visible == true){
-		if (global.bailey_has_item = false){
-			global.bailey_pickup = Near_bird.id;
-			global.bailey_has_item = true;
-		}		
+spr = object_get_sprite(Near_bird);
+spr = sprite_get_name(spr);
+
+//if (spr == spr_binaryBird1 || spr == spr_binaryBird3){ 
+	if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
+		if (Near_bird.visible == true && Near_bird.sprite_index != spr_binaryBird2){
+			if (global.bailey_has_item = false){
+				global.bailey_pickup = Near_bird.id;
+				global.bailey_has_item = true;
+			}		
+		}
 	}
+//}
 	if (global.bailey_pickup > 0) {
 		global.bailey_pickup.x = x; //here I refer to the id that's held in pickup
 		global.bailey_pickup.y = y - 8;
@@ -107,7 +113,7 @@ if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there 
 		global.bailey_pickup = 0;
 		global.bailey_has_item =false;
 	}
-}
+
 
 
 //check if q is pressed to quit the game
