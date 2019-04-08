@@ -19,8 +19,8 @@ pipe_ram = true;
 pipe_in = obj_pipe_in.x-100;
 pipe_out = obj_pipe_in.y+100;
 
-rom_in = obj_yPipe_out.x-100;
-rom_out = obj_yPipe_out.y+100;
+rom_in = obj_rom_in.x-100;
+rom_out = obj_rom_in.y+100;
 
 floor_turtle = obj_turtle_l3;
 top_turtle = obj_turtle_l3;

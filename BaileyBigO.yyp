@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "354e3e23-07bb-46d9-a19f-32c53a247745",
+            "Value": {
+                "id": "5e9aa8b9-9bd6-4a18-a5b6-2da13839dfc0",
+                "resourcePath": "objects\\obj_rom_in\\obj_rom_in.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "35855089-17fe-4f36-8375-e47122b19ed3",
             "Value": {
                 "id": "385a2116-cb46-4360-ab6c-ba8abc7089d9",
