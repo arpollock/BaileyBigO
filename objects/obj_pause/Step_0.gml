@@ -9,3 +9,9 @@ if( keyboard_check_pressed( vk_escape ) ){
 		instance_activate_all();
 	}
 }
+
+if( paused ){ //check if q is pressed to quit the game ONLY QUIT IF PAUSED
+	if (keyboard_check_pressed(ord("Q"))){
+		room_goto(main_menu_screen);
+	}
+}

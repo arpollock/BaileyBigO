@@ -21,8 +21,3 @@ if(obj_sink.itemsRecieved and obj_tv.itemsRecieved and obj_basket.itemsRecieved)
 		room_goto(level_select_screen);
 	}
 }
-
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(level_select_screen);
-}

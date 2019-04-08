@@ -83,9 +83,3 @@ if (obj_levelUnlockControl.popups == 12){
 	room_goto(level_select_screen);
 	obj_levelUnlockControl.popups = 13;
 }
-
-
-//check if q is pressed to quit the game
-if (keyboard_check(ord("Q"))){
-	room_goto(level_select_screen);
-}
