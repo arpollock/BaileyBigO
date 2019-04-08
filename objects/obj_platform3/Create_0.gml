@@ -13,8 +13,13 @@ obj_storyPopUp.title = "Level 3: More sorting";
 obj_storyPopUp.content = "It looks like the turtles have scared some of the native binary birds this time! Help Bailey and Nelly save them by sorting them into the correct pipes.";
 obj_levelUnlockControl.popups = 1;
 
+level_start = true;
+
 pipe_in = obj_pipe_in.x-100;
 pipe_out = obj_pipe_in.y+100;
-//need to figure out why they are coming in so high
-instance_create_layer(pipe_in, pipe_out,"Instances_birds", obj_binaryBird_l3);
-//instance_create_layer(obj_yPipe_out.x-100, obj_yPipe_out.y,"Instances_birds", obj_turtle);
+
+floor_turtle = obj_turtle_l3;
+top_turtle = obj_turtle_l3;
+mid_turtle = obj_turtle_l3;
+low_turtle = obj_turtle_l3;
+	

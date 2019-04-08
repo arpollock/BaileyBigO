@@ -1,5 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (level_start == true){
+	level_start = false;
+	
+	instance_create_layer(pipe_in, pipe_out,"Instances_birds", obj_binaryBird_l3);
+	
+	instance_create_layer(100, 740,"Instances_birds", floor_turtle);
+	
+	instance_create_layer(280, 315,"Instances_birds", top_turtle);
+
+	instance_create_layer(735, 455,"Instances_birds", mid_turtle);
+
+	instance_create_layer(332, 559,"Instances_birds", low_turtle);
+}
+
+
 if (global.enemiesCompleted >= maxEnemies){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Nicely done!";
