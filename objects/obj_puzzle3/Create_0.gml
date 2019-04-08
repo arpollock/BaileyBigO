@@ -2,7 +2,7 @@
 // You can write your code in this editor
 enemiesSpawned=1;
 global.enemiesCompleted = 0;
-maxEnemies = 2;
+maxEnemies = 10;
 alarm[0] = room_speed *10;
 time = 90;
 alarm[1] = room_speed *2;
