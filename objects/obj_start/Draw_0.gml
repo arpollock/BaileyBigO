@@ -21,6 +21,7 @@ if( isPressed && global.currentLevel != 1 ){
 	
 	draw_text(room_width/2, room_height/2,"Are you sure?\nThis will erase any previous progress. Y/N");
 	instance_deactivate_all(true);
+
 	
 	if( keyboard_check_pressed( ord("N") ) ){
 		isPressed = false;

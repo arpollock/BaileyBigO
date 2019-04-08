@@ -9,7 +9,7 @@ if (enemiesSpawned < maxEnemies && pipe_ram){
 }
 else if (enemiesSpawned < maxEnemies && !pipe_ram){
 	temp = instance_create_layer(rom_in, rom_out,"Instances_birds", obj_binaryBird_l3);
-	temp.sprite_index = spr_binaryBird3;
+	temp.sprite_index = choose(spr_binaryBird1, spr_binaryBird2, spr_binaryBird3);
 	enemiesSpawned++;
 	pipe_ram = !pipe_ram;
 }
