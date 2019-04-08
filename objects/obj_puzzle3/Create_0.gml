@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-enemiesSpawned=1;
+enemiesSpawned=0;
+pipe[1] = 0;
+pipe[2] = 0;
 global.enemiesCompleted = 0;
 maxEnemies = 10;
 alarm[0] = room_speed *10;
@@ -15,5 +17,6 @@ obj_storyPopUp.content = "These binary birds can't quite remember what color the
 obj_levelUnlockControl.popups = 1;
 
 //need to figure out why they are coming in so high
-instance_create_layer(x_pipe, obj_pipe_in.y,"Instances_birds", obj_binaryBird_l3);
-obj_binaryBird_l3.sprite_index = spr_binaryBird3;
+var inst = instance_create_layer(x_pipe, obj_pipe_in.y,"Instances_birds", obj_binaryBird_l3);
+enemies[enemiesSpawned] = inst;
+enemiesSpawned++;
