@@ -10,5 +10,5 @@ carried = false;
 sprite_index = choose(spr_binaryBird1, spr_binaryBird2, spr_binaryBird3);
 alarm[0] = 0;
 alarm[1] = 0;
-
+pipe = 0;
 

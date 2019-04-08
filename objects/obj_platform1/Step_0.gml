@@ -26,8 +26,16 @@ if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 	}
 	else drawNum += "0";
 	
-	locX = irandom(room_width-128)+64;
-	locY = irandom(room_height-128)+64;;
+	locX = irandom(room_width-192)+64;
+	locY = irandom(room_height-192)+64;
+	/*var loc instance_find(obj_platform,irandom(instance_number(obj_platform)));
+	locX = loc.x;
+	locY = loc.y;
+	while(!place_free(locX+sprite_width/2,locY+sprite_height/2)){//|| !place_meeting(locX,locY, obj_platform)){
+		var loc instance_find(obj_platform,irandom(instance_number(obj_platform)));
+		locX = loc.x;
+		locY = loc.y;
+	}*/
 	bird = instance_create_layer(locX, locY,"Instances",obj_binaryBirdPlatform1);
 	bird.drawNum = drawNum;
 	bird.num = birdGenNum;

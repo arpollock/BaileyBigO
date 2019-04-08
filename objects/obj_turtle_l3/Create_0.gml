@@ -6,4 +6,5 @@ pos = 0;	  //current loc along the stride
 spd = 2;
 verticalSpeed = 0;
 sprite_index = choose(spr_turtle1, spr_turtle2, spr_turtle3);
-grav = 0.3;
+grav = 0.1;
+number = 0;

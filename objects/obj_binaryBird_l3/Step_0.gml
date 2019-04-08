@@ -30,7 +30,7 @@ else{
 }
 
 	//only nelly can put in the yellow pipe
-	if( place_meeting(x, y, obj_yPipe_in) && global.nelly_pickup == id){ // is there a collision
+	if( place_meeting(x, y, obj_yPipe_in) && global.nelly_pickup == id && pipe == 1){ // is there a collision
 		visible = false;
 		//obj_binaryBird_l3_l3.id.sprite_index = spr_binaryBird2;
 		x = obj_yPipe_out.x+20;
@@ -41,9 +41,10 @@ else{
 		global.nelly_pickup = 0;
 		//instance_destroy();		
 		alarm[1] = room_speed * 10;
+		pipe++;
 	}
 	//only bailey can put in the red pipes
-	if( place_meeting(x, y, obj_rPipe_in) && global.bailey_pickup == id ){ // is there a collision
+	if( place_meeting(x, y, obj_rPipe_in) && global.bailey_pickup == id && pipe == 0){ // is there a collision
 		visible = false;
 		//obj_binaryBird_l3.id.sprite_index = spr_binaryBird1;
 		object_set_sprite(obj_binaryBird_l3, spr_binaryBird1);
@@ -55,9 +56,10 @@ else{
 		global.bailey_pickup = 0;
 		//instance_destroy();		
 		alarm[0] = room_speed * 20;
+		pipe++;
 	}
 	//only bailey can put them through the exit pipe
-	if( place_meeting(x, y, obj_pipe_exit) && global.bailey_pickup == id ){ // is there a collision
+	if( place_meeting(x, y, obj_pipe_exit) && global.bailey_pickup == id && pipe == 2){ // is there a collision
 		instance_destroy();
 		global.bailey_pickup = 0;
 		global.bailey_has_item = false;
@@ -101,3 +103,12 @@ else{
 		}
 		global.enemiesCompleted++;
 	}
+switch(pipe){
+	case 0:
+	case 2:
+		sprite_index = spr_binaryBird1;
+		break;
+	case 1:
+		sprite_index = spr_binaryBird2;
+		break;
+}

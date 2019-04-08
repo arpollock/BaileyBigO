@@ -3,6 +3,12 @@
 
 //Story Line Display for Level 2!
 
+//When player opens the door, go to room_2_puzzle
+if (obj_levelUnlockControl.popups >= 4){
+		script_sfx("win");
+		script_finishLevelIncr(3);
+		room_goto(level_select_screen);
+}
 
 
 if(obj_sink.itemsRecieved and obj_tv.itemsRecieved and obj_basket.itemsRecieved){
@@ -14,10 +20,5 @@ if(obj_sink.itemsRecieved and obj_tv.itemsRecieved and obj_basket.itemsRecieved)
 	obj_storyPopUp.baileyTalk = true;
 	obj_levelUnlockControl.popups = 3;
 	
-	//When player opens the door, go to room_2_puzzle
-	if (obj_levelUnlockControl.popups >= 4){
-		script_sfx("win");
-		script_finishLevelIncr(3);
-		room_goto(level_select_screen);
-	}
+	
 }

@@ -6,6 +6,6 @@ upKey = ord("W");
 downKey = ord("S");
 pickUpKey = vk_space;
 
-walkSpeed = 3;
+walkSpeed = 4;
 horizontalSpeed = 0;
 verticalSpeed = 0;
