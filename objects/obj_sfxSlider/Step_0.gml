@@ -16,4 +16,7 @@ if !mouse_check_button(mb_left) {
 if selected_ {
 	value_ = clamp((mouse_x-x)/sprite_width, 0, max_value_);
 	obj_sounds.sfxVolume = value_*.6;
+	if(!audio_is_playing(snd_jump)){
+		script_sfx("jump");
+	}
 }

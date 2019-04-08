@@ -1,45 +1,62 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(obj_levelUnlockControl.popups == 9){
+	collisionChecks[0] = obj_platform;
+	collisionChecks[1] = obj_bailey;
+	collisionChecks[2] = obj_nelly;
+	for(i = 0; i < 24; i++){
+		Y = i*32;
+		for(j = 0; j < 32; j++){
+			X = j*32;
+			for(k = 0; k < 3; k++){
+				if(position_meeting(X,Y,collisionChecks[k])){
+					freeSpace[i,j] = 0;
+					break;
+				}
+				else{
+					freeSpace[i,j] = 1;
+				}
+			}
+		}
+	}
 
 
-if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
-	num = birdGenNum;
-	drawNum = "";
-	if (num >= 8){
-		num -= 8;
-		drawNum += "1";
-	}
-	else drawNum += "0";
-	if (num >=4) {
-		num -=4;
-		drawNum += "1";
-	}
-	else drawNum += "0";
-	if (num >=2) {
-		num -= 2;
-		drawNum += "1";
-	}
-	else drawNum += "0";
-	if (num >= 1) {
-		num -= 1;
-		drawNum += "1";
-	}
-	else drawNum += "0";
+	if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
+		num = birdGenNum;
+		drawNum = "";
+		if (num >= 8){
+			num -= 8;
+			drawNum += "1";
+		}
+		else drawNum += "0";
+		if (num >=4) {
+			num -=4;
+			drawNum += "1";
+		}
+		else drawNum += "0";
+		if (num >=2) {
+			num -= 2;
+			drawNum += "1";
+		}
+		else drawNum += "0";
+		if (num >= 1) {
+			num -= 1;
+			drawNum += "1";
+		}
+		else drawNum += "0";
 	
-	locX = irandom(room_width-192)+64;
-	locY = irandom(room_height-192)+64;
-	/*var loc instance_find(obj_platform,irandom(instance_number(obj_platform)));
-	locX = loc.x;
-	locY = loc.y;
-	while(!place_free(locX+sprite_width/2,locY+sprite_height/2)){//|| !place_meeting(locX,locY, obj_platform)){
-		var loc instance_find(obj_platform,irandom(instance_number(obj_platform)));
-		locX = loc.x;
-		locY = loc.y;
-	}*/
-	bird = instance_create_layer(locX, locY,"Instances",obj_binaryBirdPlatform1);
-	bird.drawNum = drawNum;
-	bird.num = birdGenNum;
-	birdGenNum++;
+		locX = irandom(29)+1;
+		locY = irandom(22)+1;
+		while(!freeSpace[locY,locX]){
+			locX = irandom(29)+1;
+			locY = irandom(22)+1;
+		}
+
+		bird = instance_create_layer((locX+.5)*32, (locY+1)*32,"Instances",obj_binaryBirdPlatform1);
+		bird.drawNum = drawNum;
+		bird.num = birdGenNum;
+		birdGenNum++;
+	}
 }
 
 if (birdCollectNum >= maxi && popped_up == false){
