@@ -17,7 +17,12 @@
         "b0ee671e-f547-483d-9167-89536ba038ef",
         "628b5fd7-cbf4-47b2-b18c-270fa7a3ad16",
         "1c66d775-f670-4340-836a-e6eac520538e",
-        "890a222f-d724-453e-b547-cdbf81ab7508"
+        "890a222f-d724-453e-b547-cdbf81ab7508",
+        "50763bde-8b0a-4f06-a4fb-685d69b7ec85",
+        "4a58c343-4577-4616-a15d-fa3a4b7e3336",
+        "6304ecb1-fac7-42f5-92c6-3f066a3bfb84",
+        "46d59185-0f4e-4985-8921-5aa601c9c1db",
+        "896f7e89-b4c3-46ca-9da7-d7da6b51b4d3"
     ],
     "filterType": "GMSprite",
     "folderName": "Level2",

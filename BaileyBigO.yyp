@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "46d59185-0f4e-4985-8921-5aa601c9c1db",
+            "Value": {
+                "id": "f5020e08-3258-4fdd-b2c0-4f889df6e931",
+                "resourcePath": "sprites\\spr_fulltv\\spr_fulltv.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46fa035f-eec3-4ed2-bd3c-fa09d8f3657a",
             "Value": {
                 "id": "d07f1baa-912a-4688-a4b3-829927580e88",
@@ -652,6 +660,14 @@
                 "id": "758bf06e-194c-47b9-b1b7-7013ac66c4c5",
                 "resourcePath": "sounds\/snd_hit\/snd_hit.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "4a58c343-4577-4616-a15d-fa3a4b7e3336",
+            "Value": {
+                "id": "40214b01-41f4-4f3d-9a57-acf0e8de5c76",
+                "resourcePath": "sprites\\spr_sinktb\\spr_sinktb.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -708,6 +724,14 @@
                 "id": "e87600a0-8746-4759-bd15-b32584cc04c2",
                 "resourcePath": "fonts\/font_bender_midtitle\/font_bender_midtitle.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "50763bde-8b0a-4f06-a4fb-685d69b7ec85",
+            "Value": {
+                "id": "d3060eb7-431b-4f73-9060-8db399e04b07",
+                "resourcePath": "sprites\\spr_fullsink\\spr_fullsink.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -827,6 +851,14 @@
             "Value": {
                 "id": "cc9a8869-5842-4a3f-bca4-3ee996e279d1",
                 "resourcePath": "sprites\/spr_sink\/spr_sink.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6304ecb1-fac7-42f5-92c6-3f066a3bfb84",
+            "Value": {
+                "id": "4da937ca-d4e3-46f6-9df3-b4172aad9932",
+                "resourcePath": "sprites\\spr_sinktp\\spr_sinktp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1139,6 +1171,14 @@
             "Value": {
                 "id": "ef4a08e2-94fd-440b-bee2-14fecd8c6ec8",
                 "resourcePath": "sprites\/spr_symbol\/spr_symbol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "896f7e89-b4c3-46ca-9da7-d7da6b51b4d3",
+            "Value": {
+                "id": "fe36ad6b-97a1-48bc-83e7-087238e70833",
+                "resourcePath": "sprites\\spr_fullbasket\\spr_fullbasket.yy",
                 "resourceType": "GMSprite"
             }
         },
