@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "153b266b-2a68-482d-94b5-2d0ba749f728",
+            "Value": {
+                "id": "b6638086-a1b2-44c7-a1d8-49c7c44bdc4d",
+                "resourcePath": "objects\\obj_greenbox\\obj_greenbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "168a16cf-75e4-4869-bb74-49bb60ab6b69",
             "Value": {
                 "id": "7da1c97c-564e-4f4a-96db-25ae22f3aa32",
@@ -307,6 +315,14 @@
             "Value": {
                 "id": "2538e2dd-a4f7-456f-9caf-c7bbb16810a7",
                 "resourcePath": "sprites\/spr_basket\/spr_basket.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "220b667c-027f-4126-9cdf-1cdf10ba97a7",
+            "Value": {
+                "id": "4719dc7e-9424-44a9-88a6-370de1dce5ab",
+                "resourcePath": "sprites\\spr_greenbox\\spr_greenbox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -611,6 +627,14 @@
             "Value": {
                 "id": "d07f1baa-912a-4688-a4b3-829927580e88",
                 "resourcePath": "sprites\/spr_metalCenter\/spr_metalCenter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "47258291-fa23-45d8-a0b0-cc76d0fc4780",
+            "Value": {
+                "id": "3dd647cc-0990-4f16-877b-0edf6bae0d62",
+                "resourcePath": "sprites\\spr_redbox\\spr_redbox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1732,6 +1756,14 @@
                 "id": "d91aedcf-09c7-4802-b7ad-6641fe07ce42",
                 "resourcePath": "sprites\/spr_laserDown\/spr_laserDown.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ce0006c4-4659-466d-ad66-59cadafd597b",
+            "Value": {
+                "id": "36036de4-d1cf-49f0-9d72-30dd6e36e129",
+                "resourcePath": "objects\\obj_redbox\\obj_redbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {

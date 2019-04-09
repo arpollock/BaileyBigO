@@ -11,10 +11,16 @@ if(!binarySearch and keyboard_check_pressed(obj_nellyPuzzle2.pickUpKey)){
 if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 	obj_lever.switchLever = true;
 	numGuesses++;
+	//instance_destroy(obj_redbox);
 	//open crate or whatever 
 	if(position < ansPosition){ //display greater than
 		instance_create_layer(480, 540, "Instances", obj_symbol);
 		obj_symbol.greater = true;
+		
+		for(i = 0; i <= position; i++){
+			instance_create_layer(160 + i*64, 384, "Boxes", obj_redbox);
+		}
+
 	} 
 	else if(position == ansPosition){
 		//Level complete! they found the hash map!!
@@ -30,6 +36,10 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 	else { //display less than
 		instance_create_layer(480, 540, "Instances", obj_symbol);
 		obj_symbol.less = true;
+
+		for(i = position; i <= 10; i++){
+			instance_create_layer(160 + i*64, 384, "Boxes", obj_redbox);
+		}
 	}
 	
 }
@@ -60,6 +70,11 @@ if(solved){
 	
 	solved = false;
 	binarySearch = true;
+	position = 0;
+	
+	for(i = 0; i < 11; i++){
+		instance_create_layer(160 + i*64, 384, "Assets_2", obj_greenbox);
+	}
 }
 
 if (obj_levelUnlockControl.popups >= 4){
