@@ -13,6 +13,6 @@ else {
 	fly = 0;
 	p_side = -1;
 }
-/*while(!(place_meeting(x,y,obj_platform))) {
+while(place_meeting(x,y,obj_platform)){
 	y+=16;
-}*/
+}

@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.enemiesCompleted == maxEnemies){
-	room_goto(room_gameover);
+	script_finishLevelIncr(6);
+	script_sfx("win");
+	room_goto(level_select_screen);
+	instance_destroy();
 }
 pipe[1] = 0;
 pipe[2] = 0;

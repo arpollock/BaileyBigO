@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (fly){
-	if !(place_meeting(x+x_speed,y,obj_platform)){
+	if !(place_meeting(x,y,obj_platform)){
 		x = x+x_speed;
 	}
 	else {
@@ -12,7 +12,7 @@ if (fly){
 	}
 }
 else {
-	if !(place_meeting(x-x_speed,y,obj_platform) ){
+	if !(place_meeting(x,y,obj_platform) ){
 		x = x-x_speed;
 	}
 	else {

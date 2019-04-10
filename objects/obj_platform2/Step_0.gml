@@ -5,9 +5,10 @@
 
 //When player opens the door, go to room_2_puzzle
 if (obj_levelUnlockControl.popups >= 4){
-		script_sfx("win");
-		script_finishLevelIncr(3);
-		room_goto(level_select_screen);
+	script_sfx("win");
+	script_finishLevelIncr(3);
+	room_goto(level_select_screen);
+	instance_destroy();
 }
 
 

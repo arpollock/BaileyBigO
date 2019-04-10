@@ -81,4 +81,5 @@ if (obj_levelUnlockControl.popups >= 4){
 	script_sfx("win");
 	script_finishLevelIncr(4);
 	room_goto(level_select_screen);
+	instance_destroy();
 }

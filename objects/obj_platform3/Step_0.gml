@@ -27,6 +27,7 @@ if (obj_levelUnlockControl.popups >= 4){
 	script_sfx("win");
 	script_finishLevelIncr(5);
 	room_goto(level_select_screen);
+	instance_destroy();
 }
 
 if (global.enemiesCompleted >= maxEnemies){

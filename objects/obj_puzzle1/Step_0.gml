@@ -41,7 +41,8 @@ if (obj_levelUnlockControl.popups == 3){
 }
 
 if (obj_levelUnlockControl.popups >= 5){
-		script_sfx("win");
-		script_finishLevelIncr(2);
-		room_goto(level_select_screen);
+	script_sfx("win");
+	script_finishLevelIncr(1);
+	room_goto(level_select_screen);
+	instance_destroy();
 }
