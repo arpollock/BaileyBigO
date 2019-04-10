@@ -4,3 +4,4 @@ itemsRecieved = false
 
 toothbrush = false;
 toothpaste = false;
+sprite_index = spr_sink;
