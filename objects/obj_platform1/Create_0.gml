@@ -14,3 +14,4 @@ obj_storyPopUp.content = "Welcome to Bitsburg, a digital utopia! At least usuall
 
 popped_up = false;
 random_set_seed(current_time);
+

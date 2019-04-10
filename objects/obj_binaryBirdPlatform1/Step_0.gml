@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (fly){
-	if (place_meeting(x,y,obj_platform) && x<=room_width-64){
+	if !(place_meeting(x+x_speed,y,obj_platform)){
 		x = x+x_speed;
 	}
 	else {
@@ -12,7 +12,7 @@ if (fly){
 	}
 }
 else {
-	if (place_meeting(x,y,obj_platform) && x>=64){
+	if !(place_meeting(x-x_speed,y,obj_platform) ){
 		x = x-x_speed;
 	}
 	else {
@@ -29,7 +29,6 @@ if (p_ind > sprite_get_number(sprite_index)-1){
 	p_ind = 0;
 }	
 
-collectNum = obj_platform1.birdCollectNum;
 if(place_meeting(x,y,obj_bailey)){
 	if(sprite_index != spr_binaryBird2){
 		if (num == obj_platform1.birdCollectNum){
