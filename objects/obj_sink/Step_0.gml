@@ -22,11 +22,8 @@ if(place_meeting(x, y, obj_toothpaste)){
 }
 if(toothbrush and toothpaste){
 	sprite_index = spr_fullsink;
-	if(!itemsRecieved){
+	//if(!itemsRecieved){
 		itemsRecieved = true;
-		script_sfx("catch");
-	}
-}
-else{
-	itemsRecieved = false;
+	//	script_sfx("catch");
+	//}
 }
