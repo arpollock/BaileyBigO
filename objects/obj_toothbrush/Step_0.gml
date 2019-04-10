@@ -1,29 +1,36 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(pickedUp){
-	x = holder.x
-	y = holder.y 
+	x = holder.x;
+	y = holder.y + 10;
+	verticalSpeed = 0;
 }
 if(cooldown < 0 and pickedUp == false 
 	and place_meeting(x, y, obj_bailey) 
-	and keyboard_check(obj_bailey.pickUpKey)){
+	and keyboard_check(obj_bailey.pickUpKey)
+	and obj_bailey.holding == false){
 	pickedUp = true
 	cooldown = max_cooldown
 	holder = obj_bailey
+	obj_bailey.holding = true;
 }
 if(cooldown < 0 and keyboard_check(obj_bailey.pickUpKey) and holder == obj_bailey){
 	pickedUp = false
+	obj_bailey.holding = false;
 	cooldown = max_cooldown
 }
 if(cooldown < 0 and pickedUp == false 
 	and place_meeting(x, y, obj_nelly) 
-	and keyboard_check(obj_nelly.pickUpKey)){
+	and keyboard_check(obj_nelly.pickUpKey)
+	and obj_nelly.holding == false){
 	pickedUp = true
 	cooldown = max_cooldown
 	holder = obj_nelly
+	obj_nelly.holding = true;
 }
 if(cooldown < 0 and keyboard_check(obj_nelly.pickUpKey) and holder == obj_nelly){
 	pickedUp = false
+	obj_nelly.holding = false;
 	cooldown = max_cooldown
 }
 cooldown = cooldown - 1
