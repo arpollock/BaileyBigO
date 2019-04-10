@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(place_meeting(x, y, obj_toothbrush)){
 	toothbrush = true;
+	script_sfx("catch");
 	if(obj_toothbrush.holder == obj_bailey){
 		obj_bailey.holding = false;
 	} else {
@@ -12,6 +13,7 @@ if(place_meeting(x, y, obj_toothbrush)){
 }
 if(place_meeting(x, y, obj_toothpaste)){
 	toothpaste = true;
+	script_sfx("catch");
 	if(obj_toothpaste.holder == obj_bailey){
 		obj_bailey.holding = false;
 	} else {
@@ -22,8 +24,5 @@ if(place_meeting(x, y, obj_toothpaste)){
 }
 if(toothbrush and toothpaste){
 	sprite_index = spr_fullsink;
-	//if(!itemsRecieved){
-		itemsRecieved = true;
-	//	script_sfx("catch");
-	//}
+	itemsRecieved = true;
 }

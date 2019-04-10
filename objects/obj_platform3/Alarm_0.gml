@@ -8,8 +8,7 @@ if (enemiesSpawned < maxEnemies && pipe_ram){
 	pipe_ram = !pipe_ram;
 }
 else if (enemiesSpawned < maxEnemies && !pipe_ram){
-	temp = instance_create_layer(rom_in, rom_out,"Instances_birds", obj_binaryBird_l3);
-	temp.sprite_index = choose(spr_binaryBird1, spr_binaryBird2, spr_binaryBird3);
+	instance_create_layer(rom_in, rom_out,"Instances_birds", obj_binaryBird_l3);
 	enemiesSpawned++;
 	pipe_ram = !pipe_ram;
 }
@@ -17,6 +16,10 @@ else{
 }
 
 
-instance_create_layer (irandom_range (0, 770), irandom_range (0, 450), "Instances_birds", obj_turtle_l3);
+with (instance_create_layer (irandom_range (64, room_width), irandom_range (64, room_height), "Instances_birds", obj_turtle_l3)){
+	while(!place_empty(x,y)){
+		x = irandom_range (64, room_width);
+	}
+}
 
 alarm[0] = room_speed *20;

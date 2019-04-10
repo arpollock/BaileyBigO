@@ -103,12 +103,14 @@ else{
 		}
 		global.enemiesCompleted++;
 	}
-switch(pipe){
-	case 0:
-	case 2:
-		sprite_index = spr_binaryBird1;
-		break;
-	case 1:
-		sprite_index = spr_binaryBird2;
-		break;
+if(room == room_3_puzzle){
+	switch(pipe){
+		case 0:
+		case 2:
+			sprite_index = spr_binaryBird1;
+			break;
+		case 1:
+			sprite_index = spr_binaryBird2;
+			break;
+	}
 }
