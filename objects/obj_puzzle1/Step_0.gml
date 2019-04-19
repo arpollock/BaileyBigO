@@ -16,21 +16,18 @@ for(i = 0; i < 4; i++){
 		}
 	}
 }
-if(complete){
-	pieces[stage].visible = true;
-	stage++;
+if(complete && (alarm_get(0) == -1)){
 	script_sfx("destroy");
-	if (stage >= 4) {
-		obj_levelUnlockControl.popups += 1;
-		stage--;
-	} else {
-		//redraw = true;
-		for(i = 0; i < 4; i++){
-			for(j = 0; j < 4; j++){
-				crates[i,j].active = irandom(1);
-			}
-		}
-	}
+	show = pieces[stage];
+	X = show.x;
+	Y = show.y
+	show.x = 350;
+	show.y = 225;
+	show.depth = -1000;
+	show.visible = true;
+	show.image_xscale = 7;
+	show.image_yscale = 7;
+	alarm[0] = 100;
 }
 
 if (obj_levelUnlockControl.popups == 3){
@@ -42,7 +39,7 @@ if (obj_levelUnlockControl.popups == 3){
 
 if (obj_levelUnlockControl.popups >= 5){
 	script_sfx("win");
-	script_finishLevelIncr(1);
+	script_finishLevelIncr(2);
 	room_goto(level_select_screen);
 	instance_destroy();
 }
