@@ -1,4 +1,4 @@
-/// @description Insert description here
+	/// @description Insert description here
 // You can write your code in this editor
 stage = 0;
 obj_levelUnlockControl.popups = 0;
@@ -20,7 +20,7 @@ for(i = 0; i < 2; i++){
 
 for(i = 0; i <4; i++){
 	for(j = 0; j < 4; j++){
-		inst = instance_create_layer(256+128*i,256+128*j,"Instances", obj_crate);
+		inst = instance_create_layer(375+128*i,256+128*j,"Instances", obj_crate);
 		crates[j,i] = inst;
 		vari = irandom(1);
 		inst.active = vari;
@@ -50,3 +50,9 @@ for(i = 0; i <4; i++){
 }
 	
 random_set_seed(current_time);
+
+for(i = 0; i < 4; i++){
+	for(j = 0; j < 4; j++){	
+		active[i,j] = real(crates[i,j].active);
+	}
+}
