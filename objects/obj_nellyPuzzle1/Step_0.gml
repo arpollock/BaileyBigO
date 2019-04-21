@@ -51,6 +51,10 @@ if( keyboard_check_pressed(pickUpKey) ){
 				script_sfx("hit");
 				active = 0;
 			}
+			else{
+				script_sfx("catch");
+				active = 1;
+			}
 		}
 	}
 }

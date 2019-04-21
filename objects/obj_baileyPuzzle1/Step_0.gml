@@ -50,6 +50,9 @@ if( keyboard_check_pressed(pickUpKey) ){
 			if(!(active)){
 				script_sfx("catch");
 				active = 1;
+			} else {
+				script_sfx("hit");
+				active = 0;
 			}
 		}
 	}

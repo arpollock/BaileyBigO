@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(obj_levelUnlockControl.popups == 9){
+if(obj_levelUnlockControl.popups == 9 || played == 1){
 
 	if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 		num = birdGenNum;
@@ -92,5 +92,5 @@ if (obj_levelUnlockControl.popups == 12){
 	script_finishLevelIncr(1);
 	room_goto(level_select_screen);
 	obj_levelUnlockControl.popups = 13;
-	instance_destroy();
+	played = 1;
 }
