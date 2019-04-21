@@ -79,9 +79,6 @@ if(!place_meeting(x, y + 1, obj_platform) && !(place_meeting(x,y+1,obj_bailey_l3
 	sprite_index = spr_nellyJump;
 }
 
-if( keyboard_check(pickUpKey) ){
-	
-}
 
 Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird_l3); 
 //if (sprite_index== spr_binaryBird2 || sprite_index == spr_binaryBird3){ 

@@ -7,7 +7,7 @@ alarm[0] = room_speed *8;
 time = 90;
 alarm[1] = room_speed *2;
 
-//obj_levelUnlockControl.popups = 0;
+obj_levelUnlockControl.popups = 0;
 instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 obj_storyPopUp.title = "Level 3: Memory Allocation";
 obj_storyPopUp.content = "In this level, you will have to act like the Central Processing Unit (CPU) of the computer to make sure all the Binary Birds get to their correct locations.";
