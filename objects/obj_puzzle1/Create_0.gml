@@ -1,6 +1,7 @@
 	/// @description Insert description here
 // You can write your code in this editor
 stage = 0;
+random_set_seed(current_time);
 obj_levelUnlockControl.popups = 0;
 
 instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
@@ -56,3 +57,4 @@ for(i = 0; i < 4; i++){
 		active[i,j] = real(crates[i,j].active);
 	}
 }
+drawing = 0;

@@ -1,40 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(obj_levelUnlockControl.popups == 9){
-	/*collisionChecks[0] = obj_platform;
-	collisionChecks[1] = obj_bailey;
-	collisionChecks[2] = obj_nelly;
-	collisionChecks[3] = obj_binaryBirdPlatform1;
-	for(i = 0; i < 24; i++){
-		Y = i*32;
-		for(j = 0; j < 32; j++){
-			X = j*32;
-			for(k = 0; k < 4; k++){
-				if(position_meeting(X,Y,collisionChecks[k])){
-					freeSpace[i,j] = k;
-					break;
-				}
-				else{
-					freeSpace[i,j] = -1;
-				}
-			}
-		}
-	}*/
-	/*for(i = 0; i < room_height div 32; i++){
-		for(j = 0; j < room_width div 32; j++){
-			freeSpace[i,j] = -1;
-		}
-	}
-	
-	for (i = 0; i < 4; i++){
-		for(j = 0; j < instance_number(collisionChecks[i]); j++){
-			var inst = instance_find(collisionChecks[i],j)
-			X = inst.x div 32;
-			Y = inst.y div 32;
-			freeSpace[Y, X] = i;
-		}
-	}*/
-
 
 	if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
 		num = birdGenNum;
@@ -59,7 +25,9 @@ if(obj_levelUnlockControl.popups == 9){
 			drawNum += "1";
 		}
 		else drawNum += "0";
-	
+		
+		drawNums[birdGenNum] = drawNum;
+		
 		locX = irandom_range(64,room_width-64);
 		locY = irandom_range(64,room_height-64);;
 

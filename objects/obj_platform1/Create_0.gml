@@ -14,4 +14,6 @@ obj_storyPopUp.content = "Welcome to Bitsburg, a digital utopia! At least usuall
 
 popped_up = false;
 random_set_seed(current_time);
-
+for(i = 0; i < maxi; i++){
+	drawNums[i] = "";
+}

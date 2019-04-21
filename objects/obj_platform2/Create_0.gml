@@ -1,4 +1,5 @@
 random_set_seed(current_time);
+obj_levelUnlockControl.popups = 0;
 goals[0] = obj_sink;
 goals[1] = obj_tv;
 goals[2] = obj_basket;

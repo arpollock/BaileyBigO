@@ -16,17 +16,19 @@ for(i = 0; i < 4; i++){
 		}
 	}
 }
-if(complete && (alarm_get(0) == -1)){
+if(complete && alarm_get(0)==-1){
 	script_sfx("destroy");
 	show = pieces[stage];
-	X = show.x;
-	Y = show.y
-	show.x = 350;
-	show.y = 225;
-	show.depth = -1000;
-	show.visible = true;
-	show.image_xscale = 7;
-	show.image_yscale = 7;
+	with(show){
+		other.X = x;
+		other.Y = y
+		x = 325;
+		y = 210;
+		depth = -1000;
+		visible = true;
+		image_xscale = 7.5;
+		image_yscale = 7.5;
+	}
 	alarm[0] = 100;
 }
 

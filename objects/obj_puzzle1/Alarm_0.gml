@@ -9,7 +9,6 @@
 		obj_levelUnlockControl.popups += 1;
 		stage--;
 	} else {
-		//redraw = true;
 		for(i = 0; i < 4; i++){
 			for(j = 0; j < 4; j++){
 				crates[i,j].active = irandom(1);

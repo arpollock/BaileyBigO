@@ -2,8 +2,9 @@
 // You can write your code in this editor
 if(pickedUp){
 	x = holder.x;
-	y = holder.y + 20;
+	y = holder.y + 5;
 	verticalSpeed = 0;
+	depth = -10;
 }
 if(cooldown < 0 and pickedUp == false 
 	and place_meeting(x, y, obj_bailey) 
