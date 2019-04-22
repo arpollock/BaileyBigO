@@ -6,7 +6,7 @@ obj_levelUnlockControl.popups = 0;
 
 instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 obj_storyPopUp.title = "Puzzle 1: Binary:";
-obj_storyPopUp.content = "Before Bailey and Nelly can move on they have to organize the birds the way they should be. Use [space] for Bailey and [enter] for Nelly to change the crates to match the corresponding binary numbers. Green = 1, Red = 0";
+obj_storyPopUp.content = "Before Bailey and Nelly can move on they have to organize the birds the way they should be. Use [space] for Bailey and [enter] for Nelly to change the crates to match the corresponding binary numbers. Green = 1, Red = 0. Bailey can turn crates on and Nelly can turn them off.";
 obj_levelUnlockControl.popups = 1;
 
 

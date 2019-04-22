@@ -1,3 +1,9 @@
+obj_levelUnlockControl.popups = 0;
+instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
+obj_storyPopUp.title = "Searching and Sorting";
+obj_storyPopUp.content = "The turtles have been wreaking havoc around Bitsburg, and now Bailey and Nelly need help putting their stuff back in order. Help them search for their items and sort them back into the correct spots.";
+obj_levelUnlockControl.popups = 1;
+
 random_set_seed(current_time);
 obj_levelUnlockControl.popups = 0;
 goals[0] = obj_sink;
