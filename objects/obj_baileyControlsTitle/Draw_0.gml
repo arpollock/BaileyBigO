@@ -7,3 +7,5 @@ draw_set_alpha(1);
 
 draw_set_font(font_bender_midtitle);
 draw_text(x, y, "Bailey's\nControls");
+
+draw_sprite(spr_bailey, 1, x-175, y+50);

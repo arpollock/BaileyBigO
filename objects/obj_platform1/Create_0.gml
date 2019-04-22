@@ -18,3 +18,9 @@ random_set_seed(current_time);
 for(i = 0; i < maxi; i++){
 	drawNums[i] = "";
 }
+
+if( global.currentLevel > 1 ){
+	played = true;
+}else{
+	played = false;
+}

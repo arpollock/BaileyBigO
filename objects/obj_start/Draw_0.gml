@@ -19,7 +19,7 @@ if( isPressed && global.currentLevel != 1 ){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_text(room_width/2, room_height/2,"Are you sure?\nThis will erase any previous progress. Y/N");
+	draw_text(room_width/2, room_height/2,"Are you sure?\nThis will erase any previous progress.\nPress Y/N on keyboard");
 	instance_deactivate_all(true);
 
 	
