@@ -14,6 +14,7 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 	//instance_destroy(obj_redbox);
 	//open crate or whatever 
 	if(position < ansPosition){ //display greater than
+		instance_destroy(obj_symbol);
 		instance_create_layer(480, 540, "Instances", obj_symbol);
 		obj_symbol.greater = true;
 		
@@ -34,6 +35,7 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 		
 	}
 	else { //display less than
+		instance_destroy(obj_symbol);
 		instance_create_layer(480, 540, "Instances", obj_symbol);
 		obj_symbol.less = true;
 
@@ -47,7 +49,7 @@ if(binarySearch and keyboard_check_pressed(obj_baileyPuzzle2.pickUpKey)){
 if(!binarySearch){
 	solved = true;
 	for(i = 0; i < 11; i++){
-		if(array[i] != ans_array[i]){
+		if(array[i] != string(ans_array[i])){
 			solved = false;
 		}
 	}

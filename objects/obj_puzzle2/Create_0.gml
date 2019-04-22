@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+random_set_seed(current_time);
 obj_levelUnlockControl.popups = 0;
 instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 obj_storyPopUp.title = "Searching";
@@ -9,15 +9,28 @@ obj_levelUnlockControl.popups = 1;
 
 solved = false;
 binarySearch = false;
-ansPosition = 7;
+ansPosition = irandom_range(0, 10);
 numGuesses = 0;
-str = "10273249758";
-//str = "01223457789";
-ans = "01223457789";
-for(i = 0; i < 11; i++){
-	array[i] = string_char_at(str, i+1);
-	ans_array[i] = string_char_at(ans, i+1);
-}
-position = 0;
 
+for(i = 0; i < 11; i++){
+	num = irandom_range(0, 9)
+	array[i] = string(num);
+	unsorted[i] = num;
+}
+//sort array
+for(i = 0; i < 10; i++){
+	minimum = unsorted[i];
+	for(j = i + 1; j < 11; j++){
+		if(unsorted[j] < minimum){
+			temp = unsorted[j];
+			unsorted[i] = unsorted[j];
+			unsorted[j] = minimum;
+			minimum = temp;
+		}
+	}
+}
+ans_array = unsorted;
+
+position = 0;
+instance_create_layer(160 + 64*(ansPosition), 383, "Prize", obj_map);
 instance_deactivate_layer("Prize");

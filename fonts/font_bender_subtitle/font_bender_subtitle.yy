@@ -1,7 +1,7 @@
 {
     "id": "3ffd8a39-4815-467a-83a4-3d357319af47",
     "modelName": "GMFont",
-    "mvc": "1.1",
+    "mvc": "1.0",
     "name": "font_bender_subtitle",
     "AntiAlias": 1,
     "TTFName": "${project_dir}\\fonts\\font_bender_subtitle\\Jovanny Lemonad - Bender-Bold.otf",
@@ -10,7 +10,6 @@
     "charset": 0,
     "first": 0,
     "fontName": "Bender",
-    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1453,9 +1452,8 @@
             }
         }
     ],
-    "hinting": 0,
+    "image": null,
     "includeTTF": true,
-    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         {
@@ -17532,8 +17530,6 @@
         }
     ],
     "last": 0,
-    "maintainGms1Font": false,
-    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,
