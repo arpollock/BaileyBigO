@@ -17,7 +17,7 @@ if(obj_sink.itemsRecieved and obj_tv.itemsRecieved and obj_basket.itemsRecieved)
 	//Display message and activate the door
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey: ";
-	obj_storyPopUp.content = "Clean as a whistle! With the mess gone, we can move on to saving the rest of bitsburg. I just need one thing first...";
+	obj_storyPopUp.content = "Clean as a whistle! With the mess gone, we can move on to saving the rest of Bitsburg. I just need one thing first...";
 	obj_storyPopUp.baileyTalk = true;
 	obj_levelUnlockControl.popups = 3;
 	

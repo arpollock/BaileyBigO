@@ -96,5 +96,5 @@ if (obj_levelUnlockControl.popups == 12){
 	script_finishLevelIncr(1);
 	room_goto(level_select_screen);
 	obj_levelUnlockControl.popups = 13;
-	played = 1;
+	instance_destroy();
 }
