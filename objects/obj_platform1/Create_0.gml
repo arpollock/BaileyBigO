@@ -6,7 +6,7 @@ birdGenNum = 0;
 birdCollectNum = 0;
 drawNum = "";
 maxBirds = 3;
-player = 0;
+played = 0;
 //obj_levelUnlockControl.popups=0;
 instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 obj_storyPopUp.title = "Hello, World!";

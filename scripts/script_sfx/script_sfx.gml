@@ -19,7 +19,7 @@ switch (argument0){
 		break;
 }
 if(argument0 == "hit"){
-	audio_sound_gain(snd,obj_sounds.sfxVolume*2,0);
+	audio_sound_gain(snd,obj_sounds.sfxVolume*3,0);
 } else {
 	audio_sound_gain(snd,obj_sounds.sfxVolume,0);
 }

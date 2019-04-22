@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 if(obj_levelUnlockControl.popups == 9 || played == 1){
 
 	if(instance_number(obj_binaryBirdPlatform1) < maxBirds && birdGenNum < maxi){
@@ -44,11 +46,6 @@ if(obj_levelUnlockControl.popups == 9 || played == 1){
 	}
 }
 
-if (birdCollectNum >= maxi && popped_up == false){
-	obj_levelUnlockControl.popups += 1;
-	popped_up = true;
-}
-
 if (obj_levelUnlockControl.popups == 1){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey:";
@@ -75,11 +72,18 @@ if (obj_levelUnlockControl.popups == 5){
 if (obj_levelUnlockControl.popups == 7){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Counting in Binary";
-	obj_storyPopUp.content = "Bailey and Nelly can only catch birds of matching colors, and orange birds can be caught by both. To put the birds back properly, you need to collect them in binary order 0 : 0000, 1 : 0001, 2 : 0010, 3 : 0011, and so on. ";
+	obj_storyPopUp.content = "Bailey and Nelly can only catch birds of matching colors, and orange birds can be caught by both. To put the birds back properly, you need to collect them in binary order 0 : 0000, 1 : 0001, 2 : 0010, 3 : 0011, and so on.\nLook at the top of the screen for hits on binary counting!";
 	obj_levelUnlockControl.popups = 8;
 }
 
+if (birdCollectNum >= maxi && popped_up == false){
+	obj_levelUnlockControl.popups += 1;
+	popped_up = true;
+}
+
+
 if (obj_levelUnlockControl.popups == 10){
+	script_sfx("win");
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Bailey:";
 	obj_storyPopUp.content = "Thank you for helping me save my birds! Now that they're safe and sound, let's go save Bitsburg from the Time Complexity Turtles!";

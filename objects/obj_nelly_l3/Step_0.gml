@@ -83,7 +83,7 @@ if(!place_meeting(x, y + 1, obj_platform) && !(place_meeting(x,y+1,obj_bailey_l3
 Near_bird = instance_nearest(x+horizontalSpeed, y + verticalSpeed, obj_binaryBird_l3); 
 //if (sprite_index== spr_binaryBird2 || sprite_index == spr_binaryBird3){ 
 	if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
-		if (Near_bird.visible == true && Near_bird.sprite_index != spr_binaryBird1){
+		if (Near_bird.visible == true && Near_bird.sprite_index != spr_binaryBird1 && global.bailey_pickup != Near_bird.id){
 			if (global.nelly_has_item = false){
 				global.nelly_pickup = Near_bird.id;
 				global.nelly_has_item = true;

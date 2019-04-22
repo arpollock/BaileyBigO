@@ -96,7 +96,7 @@ spr = sprite_get_name(spr);
 
 //if (spr == spr_binaryBird1 || spr == spr_binaryBird3){ 
 	if( place_meeting(x+horizontalSpeed, y+verticalSpeed, Near_bird) ){ // is there a collision
-		if (Near_bird.visible == true && Near_bird.sprite_index != spr_binaryBird2){
+		if (Near_bird.visible == true && Near_bird.sprite_index != spr_binaryBird2 && global.nelly_pickup!= Near_bird.id){
 			if (global.bailey_has_item = false){
 				global.bailey_pickup = Near_bird.id;
 				global.bailey_has_item = true;
