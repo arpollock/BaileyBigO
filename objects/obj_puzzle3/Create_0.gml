@@ -3,7 +3,7 @@
 enemiesSpawned=0;
 pipe[1] = 0;
 pipe[2] = 0;
-global.enemiesCompleted = 0;
+global.enemiesCompleted = 10;
 maxEnemies = 10;
 alarm[0] = room_speed *10;
 time = 90;
