@@ -64,7 +64,7 @@ if (obj_levelUnlockControl.popups == 3){
 
 if (obj_levelUnlockControl.popups == 5){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
-	obj_storyPopUp.title = "Level 1, Binary Birds";
+	obj_storyPopUp.title = "Level 1: Binary Birds";
 	obj_storyPopUp.content = "Bailey and Nelly want to go save the world and stop those Time Complexity Turtles, but Bailey Big Oh's binary birds have been let out! Help Bailey and Nelly collect the birds - in the correct order - and return them to their home.";
 	obj_levelUnlockControl.popups = 6;
 }
