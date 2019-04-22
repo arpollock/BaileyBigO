@@ -27,13 +27,6 @@ if (level_start == true && obj_levelUnlockControl.popups == 3){
 }
 
 
-/*if (obj_levelUnlockControl.popups == 4){
-	obj_storyPopUp.title = "Nelly:";
-	obj_storyPopUp.content = "Oh, brother!";
-	obj_storyPopUp.nellyTalk = true;
-	obj_levelUnlockControl.popups = 5;
-}*/
-
 if (obj_levelUnlockControl.popups >= 5){
 	script_sfx("win");
 	script_finishLevelIncr(5);
@@ -44,6 +37,6 @@ if (obj_levelUnlockControl.popups >= 5){
 if (global.enemiesCompleted >= maxEnemies){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Nicely done!";
-	obj_storyPopUp.content = "Those birds were easy to sort, but next you'll have to help some with memory problems...";
+	obj_storyPopUp.content = "Those birds were a doozy to sort, but next you'll have to help some with memory problems...";
 	obj_levelUnlockControl.popups = 4;
 }
