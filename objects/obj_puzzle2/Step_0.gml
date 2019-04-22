@@ -59,7 +59,7 @@ if(!binarySearch){
 if(solved){
 	instance_create_layer(room_height, room_width, "Dialogue", obj_storyPopUp)
 	obj_storyPopUp.title = "Great Job! You bubble sorted the list!"
-	obj_storyPopUp.content = "Now the location of the Hash Map is revealed. Now we can perform a Binary Search to find it!"
+	obj_storyPopUp.content = "Now the location of the Hash Map is revealed. Now we can perform a Binary Search to find it! Binary search finds an item in a list by first looking at the midpoint, then deciding to discard either the first or second half. Then the search repeats on the selected half."
 	//Done with Bubble Sort, time to do Binary Search 
 	obj_nellyPuzzle2.x = (room_width/2 - 30) - room_width/3 + 15;
 	obj_nellyPuzzle2.y = room_height/2 - 35;
