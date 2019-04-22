@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (global.enemiesCompleted-1 >= maxEnemies){
+if (global.enemiesCompleted > maxEnemies-1){
 	script_finishLevelIncr(6);
 	script_sfx("win");
 	room_goto(level_select_screen);
